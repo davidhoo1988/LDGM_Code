@@ -1,0 +1,14 @@
+CoreGen has not been configured with any user repositories.
+CoreGen has been configured with the following Xilinx repositories:
+ - '/home/david/Xilinx/ISE13.2/ISE_DS/ISE/coregen/' [reloaded]
+INFO:sim - Generating component instance 'div' of 'xilinx.com:ip:div_gen:3.0'
+   from
+   '/home/david/Xilinx/ISE13.2/ISE_DS/ISE/coregen/ip/xilinx/dsp/com/xilinx/ip/di
+   v_gen_v3_0/div_gen_v3_0.xcd'.
+Applying current project options...
+Finished applying current project options.
+Customizing IP...
+Release 13.2 - Xilinx CORE Generator IP GUI Launcher O.61xd (lin)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Cancelled Customization.
+Wrote CGP file for project 'div'.

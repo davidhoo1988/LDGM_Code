@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2
+# SW Build 932637 on Wed Jun 11 13:08:21 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Apr  4 15:14:09 2016
+# Process ID: 22537
+# Log file: /home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.runs/fifo_8_to_1_synth_1/fifo_8_to_1.vds
+# Journal file: /home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.runs/fifo_8_to_1_synth_1/vivado.jou
+#-----------------------------------------------------------
+source fifo_8_to_1.tcl

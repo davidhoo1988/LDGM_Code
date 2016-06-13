@@ -1,0 +1,26 @@
+# Output products list for <mem1>
+_xmsgs/pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_v6_2_readme.txt
+mem1.asy
+mem1.gise
+mem1.mif
+mem1.ngc
+mem1.sym
+mem1.v
+mem1.veo
+mem1.xco
+mem1.xise
+mem1_flist.txt
+mem1_ste/example_design/bmg_wrapper.vhd
+mem1_ste/example_design/mem1_top.ucf
+mem1_ste/example_design/mem1_top.vhd
+mem1_ste/example_design/mem1_top.xdc
+mem1_ste/implement/implement.sh
+mem1_ste/implement/planAhead_rdn.bat
+mem1_ste/implement/planAhead_rdn.sh
+mem1_ste/implement/planAhead_rdn.tcl
+mem1_ste/implement/xst.prj
+mem1_ste/implement/xst.scr
+mem1_xmdf.tcl
+summary.log

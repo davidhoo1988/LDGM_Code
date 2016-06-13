@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen_tb_isim_beh.exe" -prj "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen_tb_beh.prj" "work.siggen_tb" "work.glbl" 

@@ -1,0 +1,142 @@
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt off sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sigverifier.twx sigverifier.ncd -o sigverifier.twr sigverifier.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt off sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sigverifier.twx sigverifier.ncd -o sigverifier.twr sigverifier.pcf -ucf sigverifier.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt off sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sigverifier.twx sigverifier.ncd -o sigverifier.twr sigverifier.pcf -ucf sigverifier.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt off sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sigverifier.twx sigverifier.ncd -o sigverifier.twr sigverifier.pcf -ucf sigverifier.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt off sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sigverifier.twx sigverifier.ncd -o sigverifier.twr sigverifier.pcf -ucf sigverifier.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt off sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt off sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sigverifier.twx sigverifier.ncd -o sigverifier.twr sigverifier.pcf -ucf sigverifier.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power high -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt 2 sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sigverifier.twx sigverifier.ncd -o sigverifier.twr sigverifier.pcf -ucf sigverifier.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power high -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt 2 sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sigverifier.twx sigverifier.ncd -o sigverifier.twr sigverifier.pcf -ucf sigverifier.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power high -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt 2 sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power high -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt 2 sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sigverifier.twx sigverifier.ncd -o sigverifier.twr sigverifier.pcf -ucf sigverifier.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power high -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power high -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt 2 sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sigverifier.twx sigverifier.ncd -o sigverifier.twr sigverifier.pcf -ucf sigverifier.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power high -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt 2 sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sigverifier.twx sigverifier.ncd -o sigverifier.twr sigverifier.pcf -ucf sigverifier.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power high -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt 2 sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sigverifier.twx sigverifier.ncd -o sigverifier.twr sigverifier.pcf -ucf sigverifier.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power high -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt 2 sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sigverifier.twx sigverifier.ncd -o sigverifier.twr sigverifier.pcf -ucf sigverifier.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power high -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt 2 sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sigverifier.twx sigverifier.ncd -o sigverifier.twr sigverifier.pcf -ucf sigverifier.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power high -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt 2 sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sigverifier.twx sigverifier.ncd -o sigverifier.twr sigverifier.pcf -ucf sigverifier.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power high -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt 2 sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sigverifier.twx sigverifier.ncd -o sigverifier.twr sigverifier.pcf -ucf sigverifier.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc prng_lcg.ucf -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc prng_lcg.ucf -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power high -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt 2 sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sigverifier.twx sigverifier.ncd -o sigverifier.twr sigverifier.pcf -ucf prng_lcg.ucf -ucf sigverifier.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc prng_lcg.ucf -uc sigverifier.ucf -p xc6vlx240t-ff784-3 sigverifier.ngc sigverifier.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power high -o sigverifier_map.ncd sigverifier.ngd sigverifier.pcf 
+par -w -intstyle ise -ol high -mt 2 sigverifier_map.ncd sigverifier.ncd sigverifier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sigverifier.twx sigverifier.ncd -o sigverifier.twr sigverifier.pcf -ucf prng_lcg.ucf -ucf sigverifier.ucf 

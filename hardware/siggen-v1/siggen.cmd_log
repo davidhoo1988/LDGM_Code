@@ -1,0 +1,50 @@
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/div -sd ipcore_dir/fifo_13_to_13 -sd ipcore_dir/mul_13bits -sd ipcore_dir/bram_B/B0 -sd ipcore_dir/bram_B/B1 -sd ipcore_dir/bram_B/B2 -sd ipcore_dir/bram_A/A0 -sd ipcore_dir/bram_A/A1 -sd ipcore_dir/bram_A/A2 -sd ipcore_dir/bram_2bits -sd ipcore_dir/fifo_8_to_1 -nt timestamp -i -p xc6vlx240t-ff784-3 siggen.ngc siggen.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o siggen_map.ncd siggen.ngd siggen.pcf 
+par -w -intstyle ise -ol high -mt off siggen_map.ncd siggen.ncd siggen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml siggen.twx siggen.ncd -o siggen.twr siggen.pcf 
+par -w -intstyle ise -ol high -mt off siggen_map.ncd siggen.ncd siggen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml siggen.twx siggen.ncd -o siggen.twr siggen.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/div -sd ipcore_dir/fifo_13_to_13 -sd ipcore_dir/mul_13bits -sd ipcore_dir/bram_B/B0 -sd ipcore_dir/bram_B/B1 -sd ipcore_dir/bram_B/B2 -sd ipcore_dir/bram_A/A0 -sd ipcore_dir/bram_A/A1 -sd ipcore_dir/bram_A/A2 -sd ipcore_dir/bram_2bits -sd ipcore_dir/fifo_8_to_1 -nt timestamp -uc siggen.ucf -p xc6vlx240t-ff784-3 siggen.ngc siggen.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o siggen_map.ncd siggen.ngd siggen.pcf 
+par -w -intstyle ise -ol high -mt off siggen_map.ncd siggen.ncd siggen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml siggen.twx siggen.ncd -o siggen.twr siggen.pcf -ucf siggen.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/div -sd ipcore_dir/fifo_13_to_13 -sd ipcore_dir/mul_13bits -sd ipcore_dir/bram_B/B0 -sd ipcore_dir/bram_B/B1 -sd ipcore_dir/bram_B/B2 -sd ipcore_dir/bram_A/A0 -sd ipcore_dir/bram_A/A1 -sd ipcore_dir/bram_A/A2 -sd ipcore_dir/bram_2bits -sd ipcore_dir/fifo_8_to_1 -nt timestamp -uc siggen.ucf -p xc6vlx240t-ff784-3 siggen.ngc siggen.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o siggen_map.ncd siggen.ngd siggen.pcf 
+par -w -intstyle ise -ol high -mt off siggen_map.ncd siggen.ncd siggen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml siggen.twx siggen.ncd -o siggen.twr siggen.pcf -ucf siggen.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/div -sd ipcore_dir/fifo_13_to_13 -sd ipcore_dir/mul_13bits -sd ipcore_dir/bram_B/B0 -sd ipcore_dir/bram_B/B1 -sd ipcore_dir/bram_B/B2 -sd ipcore_dir/bram_A/A0 -sd ipcore_dir/bram_A/A1 -sd ipcore_dir/bram_A/A2 -sd ipcore_dir/bram_2bits -sd ipcore_dir/fifo_8_to_1 -nt timestamp -uc siggen.ucf -p xc6vlx240t-ff784-3 siggen.ngc siggen.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o siggen_map.ncd siggen.ngd siggen.pcf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/div -sd ipcore_dir/fifo_13_to_13 -sd ipcore_dir/mul_13bits -sd ipcore_dir/bram_B/B0 -sd ipcore_dir/bram_B/B1 -sd ipcore_dir/bram_B/B2 -sd ipcore_dir/bram_A/A0 -sd ipcore_dir/bram_A/A1 -sd ipcore_dir/bram_A/A2 -sd ipcore_dir/bram_2bits -sd ipcore_dir/fifo_8_to_1 -nt timestamp -uc siggen.ucf -p xc6vlx240t-ff784-3 siggen.ngc siggen.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o siggen_map.ncd siggen.ngd siggen.pcf 
+par -w -intstyle ise -ol high -mt off siggen_map.ncd siggen.ncd siggen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml siggen.twx siggen.ncd -o siggen.twr siggen.pcf -ucf siggen.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/div -sd ipcore_dir/fifo_13_to_13 -sd ipcore_dir/mul_13bits -sd ipcore_dir/bram_B/B0 -sd ipcore_dir/bram_B/B1 -sd ipcore_dir/bram_B/B2 -sd ipcore_dir/bram_A/A0 -sd ipcore_dir/bram_A/A1 -sd ipcore_dir/bram_A/A2 -sd ipcore_dir/bram_2bits -sd ipcore_dir/fifo_8_to_1 -nt timestamp -uc siggen.ucf -p xc6vlx240t-ff784-3 siggen.ngc siggen.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o siggen_map.ncd siggen.ngd siggen.pcf 
+par -w -intstyle ise -ol high -mt off siggen_map.ncd siggen.ncd siggen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml siggen.twx siggen.ncd -o siggen.twr siggen.pcf -ucf siggen.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/div -sd ipcore_dir/fifo_13_to_13 -sd ipcore_dir/mul_13bits -sd ipcore_dir/bram_B/B0 -sd ipcore_dir/bram_B/B1 -sd ipcore_dir/bram_B/B2 -sd ipcore_dir/bram_A/A0 -sd ipcore_dir/bram_A/A1 -sd ipcore_dir/bram_A/A2 -sd ipcore_dir/bram_2bits -sd ipcore_dir/fifo_8_to_1 -nt timestamp -uc siggen.ucf -p xc6vlx240t-ff784-3 siggen.ngc siggen.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o siggen_map.ncd siggen.ngd siggen.pcf 
+par -w -intstyle ise -ol high -mt off siggen_map.ncd siggen.ncd siggen.pcf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/div -sd ipcore_dir/fifo_13_to_13 -sd ipcore_dir/mul_13bits -sd ipcore_dir/bram_B/B0 -sd ipcore_dir/bram_B/B1 -sd ipcore_dir/bram_B/B2 -sd ipcore_dir/bram_A/A0 -sd ipcore_dir/bram_A/A1 -sd ipcore_dir/bram_A/A2 -sd ipcore_dir/bram_2bits -sd ipcore_dir/fifo_8_to_1 -nt timestamp -uc siggen.ucf -p xc6vlx240t-ff784-3 siggen.ngc siggen.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/div -sd ipcore_dir/fifo_13_to_13 -sd ipcore_dir/mul_13bits -sd ipcore_dir/bram_B/B0 -sd ipcore_dir/bram_B/B1 -sd ipcore_dir/bram_B/B2 -sd ipcore_dir/bram_A/A0 -sd ipcore_dir/bram_A/A1 -sd ipcore_dir/bram_A/A2 -sd ipcore_dir/bram_2bits -sd ipcore_dir/fifo_8_to_1 -nt timestamp -uc siggen.ucf -p xc6vlx240t-ff784-3 siggen.ngc siggen.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o siggen_map.ncd siggen.ngd siggen.pcf 
+par -w -intstyle ise -ol high -mt off siggen_map.ncd siggen.ncd siggen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml siggen.twx siggen.ncd -o siggen.twr siggen.pcf -ucf siggen.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/div -sd ipcore_dir/fifo_13_to_13 -sd ipcore_dir/mul_13bits -sd ipcore_dir/bram_B/B0 -sd ipcore_dir/bram_B/B1 -sd ipcore_dir/bram_B/B2 -sd ipcore_dir/bram_A/A0 -sd ipcore_dir/bram_A/A1 -sd ipcore_dir/bram_A/A2 -sd ipcore_dir/bram_2bits -sd ipcore_dir/fifo_8_to_1 -nt timestamp -uc siggen.ucf -p xc6vlx240t-ff784-3 siggen.ngc siggen.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/div -sd ipcore_dir/fifo_13_to_13 -sd ipcore_dir/mul_13bits -sd ipcore_dir/bram_B/B0 -sd ipcore_dir/bram_B/B1 -sd ipcore_dir/bram_B/B2 -sd ipcore_dir/bram_A/A0 -sd ipcore_dir/bram_A/A1 -sd ipcore_dir/bram_A/A2 -sd ipcore_dir/bram_2bits -sd ipcore_dir/fifo_8_to_1 -nt timestamp -uc siggen.ucf -p xc6vlx240t-ff784-3 siggen.ngc siggen.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/div -sd ipcore_dir/fifo_13_to_13 -sd ipcore_dir/mul_13bits -sd ipcore_dir/bram_B/B0 -sd ipcore_dir/bram_B/B1 -sd ipcore_dir/bram_B/B2 -sd ipcore_dir/bram_A/A0 -sd ipcore_dir/bram_A/A1 -sd ipcore_dir/bram_A/A2 -sd ipcore_dir/bram_2bits -sd ipcore_dir/fifo_8_to_1 -nt timestamp -uc siggen.ucf -p xc6vlx240t-ff784-3 siggen.ngc siggen.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o siggen_map.ncd siggen.ngd siggen.pcf 
+par -w -intstyle ise -ol high -mt off siggen_map.ncd siggen.ncd siggen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml siggen.twx siggen.ncd -o siggen.twr siggen.pcf -ucf siggen.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/div -sd ipcore_dir/fifo_13_to_13 -sd ipcore_dir/mul_13bits -sd ipcore_dir/bram_B/B0 -sd ipcore_dir/bram_B/B1 -sd ipcore_dir/bram_B/B2 -sd ipcore_dir/bram_A/A0 -sd ipcore_dir/bram_A/A1 -sd ipcore_dir/bram_A/A2 -sd ipcore_dir/bram_2bits -sd ipcore_dir/fifo_8_to_1 -nt timestamp -uc siggen.ucf -p xc6vlx240t-ff784-3 siggen.ngc siggen.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o siggen_map.ncd siggen.ngd siggen.pcf 
+par -w -intstyle ise -ol high -mt off siggen_map.ncd siggen.ncd siggen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml siggen.twx siggen.ncd -o siggen.twr siggen.pcf -ucf siggen.ucf 

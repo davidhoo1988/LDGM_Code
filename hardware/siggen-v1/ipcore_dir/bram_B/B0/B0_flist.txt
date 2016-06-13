@@ -1,0 +1,26 @@
+# Output products list for <B0>
+B0.asy
+B0.gise
+B0.mif
+B0.ngc
+B0.sym
+B0.v
+B0.veo
+B0.xco
+B0.xise
+B0_flist.txt
+B0_ste/example_design/B0_top.ucf
+B0_ste/example_design/B0_top.vhd
+B0_ste/example_design/B0_top.xdc
+B0_ste/example_design/bmg_wrapper.vhd
+B0_ste/implement/implement.sh
+B0_ste/implement/planAhead_rdn.bat
+B0_ste/implement/planAhead_rdn.sh
+B0_ste/implement/planAhead_rdn.tcl
+B0_ste/implement/xst.prj
+B0_ste/implement/xst.scr
+B0_xmdf.tcl
+_xmsgs/pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_v6_2_readme.txt
+summary.log

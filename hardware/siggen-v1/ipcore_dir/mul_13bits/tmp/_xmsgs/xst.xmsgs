@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/mul_13bits/tmp/_cg/_dbg/mult_gen_v11_2/mult_gen_pkg_v11_2.vhd" Line 2593: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/mul_13bits/tmp/_cg/_dbg/mult_gen_v11_2/ccm_operation.vhd" Line 2533: Assignment to <arg fmt="%s" index="1">bank_sel</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/mul_13bits/tmp/_cg/_dbg/mult_gen_v11_2/ccm_operation.vhd" Line 2535: Assignment to <arg fmt="%s" index="1">loadb0</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/mul_13bits/tmp/_cg/_dbg/mult_gen_v11_2/ccm_operation.vhd" Line 2536: Assignment to <arg fmt="%s" index="1">loadb1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/mul_13bits/tmp/_cg/_dbg/mult_gen_v11_2/ccm_syncmem.vhd" Line 107: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="220" delta="old" >"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/mul_13bits/tmp/_cg/_dbg/mult_gen_v11_2/ccm_syncmem.vhd" Line 107: Assignment ignored
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/mul_13bits/tmp/_cg/_dbg/mult_gen_v11_2/ccm_operation.vhd" Line 2472: Net &lt;<arg fmt="%s" index="1">add_out_o[0][51]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/mul_13bits/tmp/_cg/_dbg/mult_gen_v11_2/mult_gen_v11_2_xst.vhd" Line 147: Net &lt;<arg fmt="%s" index="1">pcasci[47]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/mul_13bits/tmp/_cg/_dbg/mul_32bit.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">zero_detect</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/mul_13bits/tmp/_cg/_dbg/mul_32bit.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">pcasc</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CE</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">SCLR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">ZERO_DETECT</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">mult_gen_v11_2_xst</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">pcasci</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">mult_gen_v11_2_xst</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000000000000000000000000000000000000000000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">B&lt;17:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/mul_13bits/tmp/_cg/_dbg/mult_gen_v11_2/ccm_operation.vhd</arg>&quot; line <arg fmt="%s" index="2">2869</arg>: Output port &lt;<arg fmt="%s" index="3">OB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">b0g2.b1g4.bg[0].use_dist_ram.dg1.dmem</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/mul_13bits/tmp/_cg/_dbg/mult_gen_v11_2/ccm_operation.vhd</arg>&quot; line <arg fmt="%s" index="2">2869</arg>: Output port &lt;<arg fmt="%s" index="3">OB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">b0g2.b1g4.bg[1].use_dist_ram.dg1.dmem</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/mul_13bits/tmp/_cg/_dbg/mult_gen_v11_2/ccm_operation.vhd</arg>&quot; line <arg fmt="%s" index="2">2869</arg>: Output port &lt;<arg fmt="%s" index="3">OB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">b0g2.b1g4.bg[2].use_dist_ram.dg1.dmem</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/mul_13bits/tmp/_cg/_dbg/mult_gen_v11_2/ccm_operation.vhd</arg>&quot; line <arg fmt="%s" index="2">2869</arg>: Output port &lt;<arg fmt="%s" index="3">OB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">b0g2.b1g4.bg[3].use_dist_ram.dg1.dmem</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/mul_13bits/tmp/_cg/_dbg/mult_gen_v11_2/ccm_operation.vhd</arg>&quot; line <arg fmt="%s" index="2">2869</arg>: Output port &lt;<arg fmt="%s" index="3">OB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">b0g2.b1g4.bg[4].use_dist_ram.dg1.dmem</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/mul_13bits/tmp/_cg/_dbg/mult_gen_v11_2/ccm_operation.vhd</arg>&quot; line <arg fmt="%s" index="2">2869</arg>: Output port &lt;<arg fmt="%s" index="3">OB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">b0g2.b1g4.bg[5].use_dist_ram.dg1.dmem</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">add_out_o&lt;0&gt;&lt;51:31&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">ccm_operation</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000000000000000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">add_out_o&lt;1&gt;&lt;51:31&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">ccm_operation</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000000000000000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">add_out_o&lt;2&gt;&lt;51:44&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">ccm_operation</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">add_out_o&lt;3&gt;&lt;51:27&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">ccm_operation</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">0000000000000000000000000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ADDR_B0&lt;5:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">OB</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">ccm_syncmem</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000000000000000000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ADD</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ADD_IN_CE</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ROM_CE</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ADD</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ADD_IN_CE</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ROM_CE</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ADD</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ADD_IN_CE</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ROM_CE</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CE</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">SCLR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ADD</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ADD_IN_CE</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ROM_CE</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CLK</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CE</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">SCLR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3216" delta="old" >HDL ADVISOR - LUT implementation is currently selected for the RAM &lt;<arg fmt="%s" index="1">Mram_RAM</arg>&gt;. If you want the register to be removed and the RAM to be implemented as block RAM, please change the RAM implementation style accordingly.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[5].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/Mram_RAM23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mul_32bit</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[5].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/Mram_RAM22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mul_32bit</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[5].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/Mram_RAM24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mul_32bit</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[5].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/Mram_RAM21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mul_32bit</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[5].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/has_q.o_i_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mul_32bit</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[5].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/has_q.o_i_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mul_32bit</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[5].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/has_q.o_i_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mul_32bit</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[5].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/has_q.o_i_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mul_32bit</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[5].use_adders.a1g[1].a2g.sa1/a1g[1].o_tmp_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mul_32bit</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.exg1.exg[0].dl1/dout_i_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mul_32bit</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.exg1.exg[0].sa2/a1g[1].o_tmp_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mul_32bit</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.exg1.exg[0].sa2/a1g[1].o_tmp_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mul_32bit</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[0].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/Mram_RAM10</arg>&gt;, &lt;<arg fmt="%s" index="2">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[0].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/Mram_RAM9</arg>&gt; are equivalent, second RAM is removed
+</msg>
+
+<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[1].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/Mram_RAM10</arg>&gt;, &lt;<arg fmt="%s" index="2">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[1].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/Mram_RAM9</arg>&gt; are equivalent, second RAM is removed
+</msg>
+
+<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[2].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/Mram_RAM10</arg>&gt;, &lt;<arg fmt="%s" index="2">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[2].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/Mram_RAM9</arg>&gt; are equivalent, second RAM is removed
+</msg>
+
+<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[3].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/Mram_RAM10</arg>&gt;, &lt;<arg fmt="%s" index="2">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[3].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/Mram_RAM9</arg>&gt; are equivalent, second RAM is removed
+</msg>
+
+<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[4].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/Mram_RAM10</arg>&gt;, &lt;<arg fmt="%s" index="2">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[4].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/Mram_RAM9</arg>&gt; are equivalent, second RAM is removed
+</msg>
+
+<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[5].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/Mram_RAM10</arg>&gt;, &lt;<arg fmt="%s" index="2">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[5].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/Mram_RAM9</arg>&gt; are equivalent, second RAM is removed
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[1].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/has_q.o_i_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mul_32bit</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[1].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/has_q.o_i_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[0].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/has_q.o_i_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mul_32bit</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[0].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/has_q.o_i_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[2].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/has_q.o_i_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mul_32bit</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[2].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/has_q.o_i_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[4].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/has_q.o_i_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mul_32bit</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[4].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/has_q.o_i_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[3].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/has_q.o_i_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mul_32bit</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[3].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/has_q.o_i_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[5].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/has_q.o_i_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mul_32bit</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U0/i_mult/gCCM.iCCM/use_ccm_core.ccm_core/b0g2.b1g4.bg[5].use_dist_ram.dg1.dmem/sp_mem.dist_mem.m0/has_q.o_i_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

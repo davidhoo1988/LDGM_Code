@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="B_synth_1" LaunchPart="xc7vx485tffg1157-1" LaunchTime="1459752638">
+  <File Type="RDS-UTIL" Name="B_utilization_synth.rpt"/>
+  <File Type="PA-TCL" Name="B.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/B_synth_1/B_synth_1.psg"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/B_synth_1/sources.xml"/>
+  <File Type="VDS-HWDEF" Name="B.hwdef"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="B_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="B_timing_summary_synth.pb"/>
+  <File Type="RDS-DCP" Name="B.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="B_utilization_synth.pb"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/B_synth_1/constrs_in.xml"/>
+  <File Type="RDS-RDS" Name="B.vds"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/B">
+    <File Path="$PSRCDIR/sources_1/ip/B/B.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="B"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/B">
+    <File Path="$PSRCDIR/sources_1/ip/B/B.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="B"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

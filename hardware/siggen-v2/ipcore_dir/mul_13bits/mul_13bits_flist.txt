@@ -1,0 +1,14 @@
+# Output products list for <mul_13bits>
+_xmsgs\pn_parser.xmsgs
+mul_13bits.asy
+mul_13bits.gise
+mul_13bits.ngc
+mul_13bits.sym
+mul_13bits.v
+mul_13bits.veo
+mul_13bits.xco
+mul_13bits\doc\mult_gen_ds255.pdf
+mul_13bits\doc\mult_gen_v11_2_vinfo.html
+mul_13bits_flist.txt
+mul_13bits_readme.txt
+mul_13bits_xmdf.tcl

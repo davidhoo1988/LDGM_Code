@@ -1,0 +1,146 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1
+T_opt
+Vd>VX@=9bigg9BKO9SM;bh2
+04 11 4 work sigverifier fast 0
+Z1 04 4 4 work glbl fast 0
+=1-f8b156b053e7-56e78b8d-966c-706b
+Z2 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L secureip +acc
+n@_opt
+Z3 OE;O;6.5b;42
+T_opt1
+VIjIZ<MgOJD[K]9@QXWK3K1
+Z4 04 14 4 work sigverifier_tb fast 0
+R1
+=1-f8b156b053e7-56e928ff-465cf-2267
+R2
+n@_opt1
+R3
+T_opt2
+VFd[Gf4D4[=?DLWkcM8zQ03
+R4
+R1
+=1-f8b156b053e7-56e8d11b-73e26-6c4b
+R2
+n@_opt2
+R3
+vglbl
+!s100 4=LmVFjWGlXARKf5L_9V<3
+I50KRYJEd>O4zk>d5_9h@h2
+VnN]4Gon>inod6>M^M2[SV1
+w1308634177
+8/home/david/Xilinx/ISE13.2/ISE_DS/ISE//verilog/src/glbl.v
+F/home/david/Xilinx/ISE13.2/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+Z5 OE;L;6.5b;42
+r1
+!s85 0
+31
+Z6 o-L mtiAvm -L mtiOvm -L mtiUPF
+vmem0
+I7Y28cI[^6ZjGmH^UiL;SB3
+V=9RQG:eNdXWk:`i0<2FHJ2
+w1458032072
+8ipcore_dir/mem0.v
+Fipcore_dir/mem0.v
+L0 39
+R5
+r1
+31
+R6
+!s100 bO7?kR]^DDY[<N0^QRmAJ3
+!s85 0
+vmem1
+IDA1g;KSYQO`RGUhSAARP=0
+VjnQ3i<UkgKlgEUBRh<lCF1
+w1458032448
+8ipcore_dir/mem1.v
+Fipcore_dir/mem1.v
+L0 39
+R5
+r1
+31
+R6
+!s100 TS98Y9e`UZFaDdOj[R=hl1
+!s85 0
+vmem2
+IoIidS?6^[8[]S<lRQ]]Yi1
+VZaTGbYQhIZKQ5e<^AQjG@1
+w1458032635
+8ipcore_dir/mem2.v
+Fipcore_dir/mem2.v
+L0 39
+R5
+r1
+31
+R6
+!s100 i0Z==nVaN[HDi`?^;`;EI0
+!s85 0
+vmem3
+IfGj`K_Vb7kD?_TaEB:oPi0
+Vj3<aF0z]OhC4R8bXeCYO13
+w1457707931
+8ipcore_dir/mem3.v
+Fipcore_dir/mem3.v
+L0 39
+R5
+r1
+31
+R6
+!s100 HY=<alhdYG9IY6D<``KjP0
+!s85 0
+vmem_top
+IMl:<13:@XHQ^BbRRIfN<<2
+V=MhY5:l_WMOFb@Bd;1BbQ0
+w1458031784
+8mem_top.v
+Fmem_top.v
+L0 23
+R5
+r1
+31
+R6
+!s100 D@5TAK25?TNHi>6QUc6L`0
+!s85 0
+vqc_shifter
+I[z=hY2f[VBi31O54B`bkg1
+VBAdgN7Whd>ngiYKRd]_O:3
+w1458094588
+8qc_shifter.v
+Fqc_shifter.v
+L0 21
+R5
+r1
+31
+R6
+!s100 96PZ;RX_o?9^8kK2mkgGe1
+!s85 0
+vsigverifier
+I2Ro7g^P=UzDK6P;FmAiVS2
+VKHFf`B^@7ZbNIl@<=2GQX3
+w1459142664
+8sigverifier.v
+Fsigverifier.v
+L0 21
+R5
+r1
+31
+R6
+!s100 ;La^^QP9iWQlnX5GCUAR53
+!s85 0
+vsigverifier_tb
+I__ozVN_>]ZVBK2ShY=eSn1
+V4GWnGNL;lb6Mi2kR_]?<Y1
+w1458015099
+8sigverifier_tb.v
+Fsigverifier_tb.v
+L0 25
+R5
+r1
+31
+R6
+!s100 5D>OCe5ef`0lgF9cAUYOj0
+!s85 0

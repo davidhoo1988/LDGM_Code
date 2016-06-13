@@ -1,0 +1,80 @@
+Release 13.2 Physical Synthesis Report O.61xd (lin)
+Copyright (c) 1995-2011 Xilinx, Inc. All rights reserved.
+
+TABLE OF CONTENTS
+  1) Physical Synthesis Options Summary
+  2) Optimizations statistics and details
+
+
+=========================================================================
+*                 Physical Synthesis Options Summary                    *
+=========================================================================
+---- Options
+Global Optimization                 : OFF
+    Retiming                        : OFF
+    Equivalent Register Removal     : OFF
+Timing-Driven Packing and Placement : ON
+    Logic Optimization              : OFF
+    Register Duplication            : OFF
+
+---- Intelligent clock gating       : ON
+
+---- Target Parameters
+Target Device                       : 6vlx240tff784-3
+
+=========================================================================
+
+
+=========================================================================
+*                        Optimizations                                  *
+=========================================================================
+---- Statistics
+
+   Number of Slice registers gated                           : 0               
+   Number of BRAM Ports gated                                : 30              
+   Number of clock enable net processed                      : 34              
+   Number of Flops added for Enable Generation               : 2               
+
+
+---- Details
+
+
+
+Component Name                                    | Type      | CE Name                         | Objective 
+--------------------------------------------------|-----------|---------------------------------|-----------
+mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_5| Power     
+mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_7| Power     
+mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_9| Power     
+mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_11| Power     
+mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_13| Power     
+mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_15| Power     
+mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_17| Power     
+mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_19| Power     
+mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_21| Power     
+mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_23| Power     
+mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_25| Power     
+mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_27| Power     
+mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_29| Power     
+mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_31| Power     
+mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_33| Power     
+mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_35| Power     
+mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_37| Power     
+mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_39| Power     
+mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_41| Power     
+mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_43| Power     
+mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_45| Power     
+mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_47| Power     
+mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_49| Power     
+mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_51| Power     
+mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_53| Power     
+mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_55| Power     
+mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_57| Power     
+mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_59| Power     
+mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_61| Power     
+mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram| BRAM      | mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_63| Power     
+
+
+   Flops added for Enable Generation                       
+-------------------------
+       mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_cooolgate_en_gate_2_cooolDelFlop
+       mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram_cooolgate_en_gate_4_cooolDelFlop

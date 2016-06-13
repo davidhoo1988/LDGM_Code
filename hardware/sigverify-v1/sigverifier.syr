@@ -1,0 +1,1356 @@
+Release 13.2 - xst O.61xd (lin)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: sigverifier.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "sigverifier.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "sigverifier"
+Output Format                      : NGC
+Target Device                      : xc6vlx240t-3-ff784
+
+---- Source Options
+Top Module Name                    : sigverifier
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Block
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Automax
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : No
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/ipcore_dir/mem2.v\" into library work
+Parsing module <mem2>.
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/ipcore_dir/mem1.v\" into library work
+Parsing module <mem1>.
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/ipcore_dir/mem0.v\" into library work
+Parsing module <mem0>.
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/qc_shifter.v\" into library work
+Parsing module <qc_shifter>.
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/mem_top.v\" into library work
+Parsing module <mem_top>.
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.v\" into library work
+Parsing module <sigverifier>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <sigverifier>.
+
+Elaborating module <mem_top>.
+
+Elaborating module <mem0>.
+WARNING:HDLCompiler:1499 - "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/ipcore_dir/mem0.v" Line 39: Empty module <mem0> remains a black box.
+
+Elaborating module <mem1>.
+WARNING:HDLCompiler:1499 - "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/ipcore_dir/mem1.v" Line 39: Empty module <mem1> remains a black box.
+
+Elaborating module <mem2>.
+WARNING:HDLCompiler:1499 - "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/ipcore_dir/mem2.v" Line 39: Empty module <mem2> remains a black box.
+
+Elaborating module <qc_shifter>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <sigverifier>.
+    Related source file is "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/sigverifier.v".
+        s_start = 2'b00
+        s_scan = 2'b01
+        s_load = 2'b10
+        s_finish = 2'b11
+    Found 9800-bit register for signal <shift_reg>.
+    Found 4900-bit register for signal <tmp_reg>.
+    Found 4900-bit register for signal <sig_reg>.
+    Found 10-bit register for signal <mem_addr>.
+    Found 3-bit register for signal <cnt1>.
+    Found 6-bit register for signal <cnt2>.
+    Found 2-bit register for signal <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 10                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_b_INV_6_o (positive)                       |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit adder for signal <mem_addr[9]_GND_1_o_add_54_OUT> created at line 194.
+    Found 3-bit adder for signal <cnt1[2]_GND_1_o_add_59_OUT> created at line 204.
+    Found 6-bit adder for signal <cnt2[5]_GND_1_o_add_66_OUT> created at line 211.
+    Found 1-bit 4-to-1 multiplexer for signal <mem_sel> created at line 93.
+WARNING:Xst:737 - Found 1-bit latch for signal <finish>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <add_sel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <done>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tmp_sel<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tmp_sel<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 19619 D-type flip-flop(s).
+	inferred   5 Latch(s).
+	inferred   5 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <sigverifier> synthesized.
+
+Synthesizing Unit <mem_top>.
+    Related source file is "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/mem_top.v".
+        ADDR_W = 10
+        DAT_W = 1050
+    Summary:
+	no macro.
+Unit <mem_top> synthesized.
+
+Synthesizing Unit <qc_shifter>.
+    Related source file is "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/qc_shifter.v".
+    Summary:
+	no macro.
+Unit <qc_shifter> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 10-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 6-bit adder                                           : 1
+# Registers                                            : 6
+ 10-bit register                                       : 1
+ 3-bit register                                        : 1
+ 4900-bit register                                     : 2
+ 6-bit register                                        : 1
+ 9800-bit register                                     : 1
+# Latches                                              : 5
+ 1-bit latch                                           : 5
+# Multiplexers                                         : 5
+ 1-bit 2-to-1 multiplexer                              : 4
+ 1-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 4900-bit xor2                                         : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/mem0.ngc>.
+Reading core <ipcore_dir/mem1.ngc>.
+Reading core <ipcore_dir/mem2.ngc>.
+Loading core <mem0> for timing and area information for instance <mem0>.
+Loading core <mem1> for timing and area information for instance <mem1>.
+Loading core <mem2> for timing and area information for instance <mem2>.
+
+Synthesizing (advanced) Unit <sigverifier>.
+The following registers are absorbed into counter <cnt1>: 1 register on signal <cnt1>.
+The following registers are absorbed into counter <mem_addr>: 1 register on signal <mem_addr>.
+The following registers are absorbed into counter <cnt2>: 1 register on signal <cnt2>.
+Unit <sigverifier> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 10-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 19600
+ Flip-Flops                                            : 19600
+# Multiplexers                                         : 5
+ 1-bit 2-to-1 multiplexer                              : 4
+ 1-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 4900-bit xor2                                         : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 10    | 01
+ 01    | 11
+ 11    | 10
+-------------------
+WARNING:Xst:2016 - Found a loop when searching source clock on port 'state[1]_PWR_4_o_Mux_28_o:state[1]_PWR_4_o_Mux_28_o'
+Last warning will be issued only once.
+
+Optimizing unit <sigverifier> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block sigverifier, actual ratio is 18.
+
+Final Macro Processing ...
+
+Processing Unit <sigverifier> :
+	Found 9-bit shift register for signal <shift_reg_9778>.
+	Found 8-bit shift register for signal <shift_reg_9769>.
+	Found 6-bit shift register for signal <shift_reg_9761>.
+	Found 13-bit shift register for signal <shift_reg_9747>.
+	Found 9-bit shift register for signal <shift_reg_9730>.
+	Found 7-bit shift register for signal <shift_reg_9718>.
+	Found 7-bit shift register for signal <shift_reg_9710>.
+	Found 5-bit shift register for signal <shift_reg_9704>.
+	Found 28-bit shift register for signal <shift_reg_9675>.
+	Found 20-bit shift register for signal <shift_reg_9651>.
+	Found 6-bit shift register for signal <shift_reg_9644>.
+	Found 11-bit shift register for signal <shift_reg_9632>.
+	Found 7-bit shift register for signal <shift_reg_9620>.
+	Found 14-bit shift register for signal <shift_reg_9605>.
+	Found 6-bit shift register for signal <shift_reg_9589>.
+	Found 6-bit shift register for signal <shift_reg_9576>.
+	Found 15-bit shift register for signal <shift_reg_9560>.
+	Found 19-bit shift register for signal <shift_reg_9538>.
+	Found 9-bit shift register for signal <shift_reg_9528>.
+	Found 14-bit shift register for signal <shift_reg_9509>.
+	Found 6-bit shift register for signal <shift_reg_9495>.
+	Found 7-bit shift register for signal <shift_reg_9484>.
+	Found 7-bit shift register for signal <shift_reg_9476>.
+	Found 10-bit shift register for signal <shift_reg_9465>.
+	Found 4-bit shift register for signal <shift_reg_9449>.
+	Found 20-bit shift register for signal <shift_reg_9422>.
+	Found 13-bit shift register for signal <shift_reg_9407>.
+	Found 6-bit shift register for signal <shift_reg_9400>.
+	Found 11-bit shift register for signal <shift_reg_9386>.
+	Found 4-bit shift register for signal <shift_reg_9378>.
+	Found 10-bit shift register for signal <shift_reg_9367>.
+	Found 34-bit shift register for signal <shift_reg_9332>.
+	Found 9-bit shift register for signal <shift_reg_9322>.
+	Found 7-bit shift register for signal <shift_reg_9313>.
+	Found 7-bit shift register for signal <shift_reg_9305>.
+	Found 7-bit shift register for signal <shift_reg_9297>.
+	Found 18-bit shift register for signal <shift_reg_9278>.
+	Found 4-bit shift register for signal <shift_reg_9264>.
+	Found 5-bit shift register for signal <shift_reg_9254>.
+	Found 5-bit shift register for signal <shift_reg_9243>.
+	Found 4-bit shift register for signal <shift_reg_9238>.
+	Found 19-bit shift register for signal <shift_reg_9218>.
+	Found 8-bit shift register for signal <shift_reg_9204>.
+	Found 15-bit shift register for signal <shift_reg_9181>.
+	Found 7-bit shift register for signal <shift_reg_9173>.
+	Found 6-bit shift register for signal <shift_reg_9166>.
+	Found 4-bit shift register for signal <shift_reg_9159>.
+	Found 6-bit shift register for signal <shift_reg_9152>.
+	Found 8-bit shift register for signal <shift_reg_9140>.
+	Found 9-bit shift register for signal <shift_reg_9130>.
+	Found 6-bit shift register for signal <shift_reg_9123>.
+	Found 7-bit shift register for signal <shift_reg_9115>.
+	Found 7-bit shift register for signal <shift_reg_9107>.
+	Found 4-bit shift register for signal <shift_reg_9102>.
+	Found 8-bit shift register for signal <shift_reg_9093>.
+	Found 9-bit shift register for signal <shift_reg_9080>.
+	Found 15-bit shift register for signal <shift_reg_9060>.
+	Found 12-bit shift register for signal <shift_reg_9040>.
+	Found 6-bit shift register for signal <shift_reg_9025>.
+	Found 14-bit shift register for signal <shift_reg_9009>.
+	Found 26-bit shift register for signal <shift_reg_8979>.
+	Found 11-bit shift register for signal <shift_reg_8962>.
+	Found 4-bit shift register for signal <shift_reg_8955>.
+	Found 4-bit shift register for signal <shift_reg_8939>.
+	Found 30-bit shift register for signal <shift_reg_8902>.
+	Found 17-bit shift register for signal <shift_reg_8884>.
+	Found 6-bit shift register for signal <shift_reg_8875>.
+	Found 16-bit shift register for signal <shift_reg_8854>.
+	Found 4-bit shift register for signal <shift_reg_8850>.
+	Found 8-bit shift register for signal <shift_reg_8842>.
+	Found 13-bit shift register for signal <shift_reg_8825>.
+	Found 10-bit shift register for signal <shift_reg_8793>.
+	Found 13-bit shift register for signal <shift_reg_8774>.
+	Found 8-bit shift register for signal <shift_reg_8760>.
+	Found 10-bit shift register for signal <shift_reg_8747>.
+	Found 7-bit shift register for signal <shift_reg_8739>.
+	Found 17-bit shift register for signal <shift_reg_8721>.
+	Found 5-bit shift register for signal <shift_reg_8713>.
+	Found 10-bit shift register for signal <shift_reg_8702>.
+	Found 14-bit shift register for signal <shift_reg_8684>.
+	Found 18-bit shift register for signal <shift_reg_8657>.
+	Found 7-bit shift register for signal <shift_reg_8649>.
+	Found 20-bit shift register for signal <shift_reg_8628>.
+	Found 4-bit shift register for signal <shift_reg_8623>.
+	Found 4-bit shift register for signal <shift_reg_8619>.
+	Found 21-bit shift register for signal <shift_reg_8598>.
+	Found 6-bit shift register for signal <shift_reg_8591>.
+	Found 4-bit shift register for signal <shift_reg_8586>.
+	Found 15-bit shift register for signal <shift_reg_8570>.
+	Found 4-bit shift register for signal <shift_reg_8551>.
+	Found 9-bit shift register for signal <shift_reg_8541>.
+	Found 7-bit shift register for signal <shift_reg_8533>.
+	Found 14-bit shift register for signal <shift_reg_8518>.
+	Found 14-bit shift register for signal <shift_reg_8503>.
+	Found 12-bit shift register for signal <shift_reg_8490>.
+	Found 4-bit shift register for signal <shift_reg_8483>.
+	Found 19-bit shift register for signal <shift_reg_8463>.
+	Found 4-bit shift register for signal <shift_reg_8454>.
+	Found 4-bit shift register for signal <shift_reg_8449>.
+	Found 18-bit shift register for signal <shift_reg_8430>.
+	Found 16-bit shift register for signal <shift_reg_8413>.
+	Found 4-bit shift register for signal <shift_reg_8407>.
+	Found 13-bit shift register for signal <shift_reg_8393>.
+	Found 25-bit shift register for signal <shift_reg_8367>.
+	Found 12-bit shift register for signal <shift_reg_8354>.
+	Found 18-bit shift register for signal <shift_reg_8330>.
+	Found 5-bit shift register for signal <shift_reg_8324>.
+	Found 5-bit shift register for signal <shift_reg_8318>.
+	Found 6-bit shift register for signal <shift_reg_8305>.
+	Found 18-bit shift register for signal <shift_reg_8286>.
+	Found 5-bit shift register for signal <shift_reg_8280>.
+	Found 14-bit shift register for signal <shift_reg_8263>.
+	Found 4-bit shift register for signal <shift_reg_8252>.
+	Found 16-bit shift register for signal <shift_reg_8235>.
+	Found 6-bit shift register for signal <shift_reg_8228>.
+	Found 8-bit shift register for signal <shift_reg_8219>.
+	Found 15-bit shift register for signal <shift_reg_8203>.
+	Found 5-bit shift register for signal <shift_reg_8196>.
+	Found 15-bit shift register for signal <shift_reg_8180>.
+	Found 8-bit shift register for signal <shift_reg_8168>.
+	Found 5-bit shift register for signal <shift_reg_8162>.
+	Found 12-bit shift register for signal <shift_reg_8149>.
+	Found 12-bit shift register for signal <shift_reg_8136>.
+	Found 4-bit shift register for signal <shift_reg_8131>.
+	Found 15-bit shift register for signal <shift_reg_8110>.
+	Found 9-bit shift register for signal <shift_reg_8097>.
+	Found 8-bit shift register for signal <shift_reg_8071>.
+	Found 7-bit shift register for signal <shift_reg_8063>.
+	Found 6-bit shift register for signal <shift_reg_8053>.
+	Found 6-bit shift register for signal <shift_reg_8046>.
+	Found 8-bit shift register for signal <shift_reg_8031>.
+	Found 6-bit shift register for signal <shift_reg_8024>.
+	Found 11-bit shift register for signal <shift_reg_8012>.
+	Found 5-bit shift register for signal <shift_reg_8006>.
+	Found 7-bit shift register for signal <shift_reg_7998>.
+	Found 4-bit shift register for signal <shift_reg_7991>.
+	Found 9-bit shift register for signal <shift_reg_7981>.
+	Found 13-bit shift register for signal <shift_reg_7967>.
+	Found 4-bit shift register for signal <shift_reg_7962>.
+	Found 4-bit shift register for signal <shift_reg_7957>.
+	Found 19-bit shift register for signal <shift_reg_7936>.
+	Found 4-bit shift register for signal <shift_reg_7931>.
+	Found 6-bit shift register for signal <shift_reg_7920>.
+	Found 9-bit shift register for signal <shift_reg_7902>.
+	Found 10-bit shift register for signal <shift_reg_7891>.
+	Found 7-bit shift register for signal <shift_reg_7881>.
+	Found 14-bit shift register for signal <shift_reg_7859>.
+	Found 4-bit shift register for signal <shift_reg_7854>.
+	Found 14-bit shift register for signal <shift_reg_7827>.
+	Found 12-bit shift register for signal <shift_reg_7814>.
+	Found 5-bit shift register for signal <shift_reg_7803>.
+	Found 8-bit shift register for signal <shift_reg_7782>.
+	Found 12-bit shift register for signal <shift_reg_7762>.
+	Found 4-bit shift register for signal <shift_reg_7753>.
+	Found 5-bit shift register for signal <shift_reg_7747>.
+	Found 8-bit shift register for signal <shift_reg_7738>.
+	Found 4-bit shift register for signal <shift_reg_7734>.
+	Found 5-bit shift register for signal <shift_reg_7729>.
+	Found 20-bit shift register for signal <shift_reg_7708>.
+	Found 5-bit shift register for signal <shift_reg_7697>.
+	Found 5-bit shift register for signal <shift_reg_7691>.
+	Found 16-bit shift register for signal <shift_reg_7670>.
+	Found 4-bit shift register for signal <shift_reg_7665>.
+	Found 15-bit shift register for signal <shift_reg_7649>.
+	Found 4-bit shift register for signal <shift_reg_7640>.
+	Found 11-bit shift register for signal <shift_reg_7619>.
+	Found 9-bit shift register for signal <shift_reg_7609>.
+	Found 17-bit shift register for signal <shift_reg_7591>.
+	Found 13-bit shift register for signal <shift_reg_7571>.
+	Found 10-bit shift register for signal <shift_reg_7551>.
+	Found 13-bit shift register for signal <shift_reg_7537>.
+	Found 4-bit shift register for signal <shift_reg_7525>.
+	Found 14-bit shift register for signal <shift_reg_7510>.
+	Found 4-bit shift register for signal <shift_reg_7505>.
+	Found 6-bit shift register for signal <shift_reg_7498>.
+	Found 4-bit shift register for signal <shift_reg_7494>.
+	Found 7-bit shift register for signal <shift_reg_7487>.
+	Found 7-bit shift register for signal <shift_reg_7479>.
+	Found 9-bit shift register for signal <shift_reg_7465>.
+	Found 7-bit shift register for signal <shift_reg_7454>.
+	Found 12-bit shift register for signal <shift_reg_7441>.
+	Found 6-bit shift register for signal <shift_reg_7433>.
+	Found 17-bit shift register for signal <shift_reg_7408>.
+	Found 5-bit shift register for signal <shift_reg_7402>.
+	Found 8-bit shift register for signal <shift_reg_7393>.
+	Found 6-bit shift register for signal <shift_reg_7386>.
+	Found 4-bit shift register for signal <shift_reg_7381>.
+	Found 19-bit shift register for signal <shift_reg_7359>.
+	Found 6-bit shift register for signal <shift_reg_7352>.
+	Found 17-bit shift register for signal <shift_reg_7334>.
+	Found 9-bit shift register for signal <shift_reg_7324>.
+	Found 17-bit shift register for signal <shift_reg_7305>.
+	Found 10-bit shift register for signal <shift_reg_7291>.
+	Found 16-bit shift register for signal <shift_reg_7274>.
+	Found 4-bit shift register for signal <shift_reg_7265>.
+	Found 9-bit shift register for signal <shift_reg_7255>.
+	Found 11-bit shift register for signal <shift_reg_7239>.
+	Found 8-bit shift register for signal <shift_reg_7230>.
+	Found 15-bit shift register for signal <shift_reg_7214>.
+	Found 8-bit shift register for signal <shift_reg_7201>.
+	Found 33-bit shift register for signal <shift_reg_7164>.
+	Found 4-bit shift register for signal <shift_reg_7159>.
+	Found 4-bit shift register for signal <shift_reg_7154>.
+	Found 4-bit shift register for signal <shift_reg_7149>.
+	Found 14-bit shift register for signal <shift_reg_7133>.
+	Found 18-bit shift register for signal <shift_reg_7114>.
+	Found 5-bit shift register for signal <shift_reg_7108>.
+	Found 5-bit shift register for signal <shift_reg_7102>.
+	Found 11-bit shift register for signal <shift_reg_7086>.
+	Found 20-bit shift register for signal <shift_reg_7065>.
+	Found 9-bit shift register for signal <shift_reg_7047>.
+	Found 12-bit shift register for signal <shift_reg_7034>.
+	Found 9-bit shift register for signal <shift_reg_7024>.
+	Found 12-bit shift register for signal <shift_reg_7001>.
+	Found 10-bit shift register for signal <shift_reg_6989>.
+	Found 4-bit shift register for signal <shift_reg_6984>.
+	Found 7-bit shift register for signal <shift_reg_6976>.
+	Found 4-bit shift register for signal <shift_reg_6960>.
+	Found 21-bit shift register for signal <shift_reg_6938>.
+	Found 6-bit shift register for signal <shift_reg_6925>.
+	Found 4-bit shift register for signal <shift_reg_6916>.
+	Found 15-bit shift register for signal <shift_reg_6900>.
+	Found 9-bit shift register for signal <shift_reg_6890>.
+	Found 5-bit shift register for signal <shift_reg_6884>.
+	Found 5-bit shift register for signal <shift_reg_6878>.
+	Found 11-bit shift register for signal <shift_reg_6858>.
+	Found 4-bit shift register for signal <shift_reg_6853>.
+	Found 12-bit shift register for signal <shift_reg_6840>.
+	Found 6-bit shift register for signal <shift_reg_6829>.
+	Found 6-bit shift register for signal <shift_reg_6822>.
+	Found 6-bit shift register for signal <shift_reg_6815>.
+	Found 9-bit shift register for signal <shift_reg_6805>.
+	Found 10-bit shift register for signal <shift_reg_6794>.
+	Found 5-bit shift register for signal <shift_reg_6788>.
+	Found 5-bit shift register for signal <shift_reg_6782>.
+	Found 4-bit shift register for signal <shift_reg_6772>.
+	Found 4-bit shift register for signal <shift_reg_6766>.
+	Found 22-bit shift register for signal <shift_reg_6743>.
+	Found 9-bit shift register for signal <shift_reg_6733>.
+	Found 7-bit shift register for signal <shift_reg_6722>.
+	Found 8-bit shift register for signal <shift_reg_6706>.
+	Found 6-bit shift register for signal <shift_reg_6699>.
+	Found 9-bit shift register for signal <shift_reg_6689>.
+	Found 18-bit shift register for signal <shift_reg_6670>.
+	Found 7-bit shift register for signal <shift_reg_6660>.
+	Found 8-bit shift register for signal <shift_reg_6645>.
+	Found 8-bit shift register for signal <shift_reg_6636>.
+	Found 6-bit shift register for signal <shift_reg_6629>.
+	Found 4-bit shift register for signal <shift_reg_6624>.
+	Found 9-bit shift register for signal <shift_reg_6614>.
+	Found 21-bit shift register for signal <shift_reg_6589>.
+	Found 32-bit shift register for signal <shift_reg_6556>.
+	Found 5-bit shift register for signal <shift_reg_6545>.
+	Found 7-bit shift register for signal <shift_reg_6533>.
+	Found 5-bit shift register for signal <shift_reg_6527>.
+	Found 9-bit shift register for signal <shift_reg_6517>.
+	Found 18-bit shift register for signal <shift_reg_6498>.
+	Found 11-bit shift register for signal <shift_reg_6486>.
+	Found 4-bit shift register for signal <shift_reg_6481>.
+	Found 6-bit shift register for signal <shift_reg_6465>.
+	Found 8-bit shift register for signal <shift_reg_6456>.
+	Found 20-bit shift register for signal <shift_reg_6432>.
+	Found 24-bit shift register for signal <shift_reg_6407>.
+	Found 6-bit shift register for signal <shift_reg_6397>.
+	Found 24-bit shift register for signal <shift_reg_6372>.
+	Found 6-bit shift register for signal <shift_reg_6365>.
+	Found 4-bit shift register for signal <shift_reg_6360>.
+	Found 7-bit shift register for signal <shift_reg_6352>.
+	Found 17-bit shift register for signal <shift_reg_6334>.
+	Found 14-bit shift register for signal <shift_reg_6317>.
+	Found 5-bit shift register for signal <shift_reg_6309>.
+	Found 5-bit shift register for signal <shift_reg_6303>.
+	Found 9-bit shift register for signal <shift_reg_6291>.
+	Found 18-bit shift register for signal <shift_reg_6266>.
+	Found 9-bit shift register for signal <shift_reg_6256>.
+	Found 12-bit shift register for signal <shift_reg_6243>.
+	Found 8-bit shift register for signal <shift_reg_6234>.
+	Found 32-bit shift register for signal <shift_reg_6197>.
+	Found 32-bit shift register for signal <shift_reg_6164>.
+	Found 8-bit shift register for signal <shift_reg_6151>.
+	Found 19-bit shift register for signal <shift_reg_6131>.
+	Found 7-bit shift register for signal <shift_reg_6120>.
+	Found 6-bit shift register for signal <shift_reg_6113>.
+	Found 26-bit shift register for signal <shift_reg_6086>.
+	Found 7-bit shift register for signal <shift_reg_6075>.
+	Found 22-bit shift register for signal <shift_reg_6052>.
+	Found 10-bit shift register for signal <shift_reg_6041>.
+	Found 6-bit shift register for signal <shift_reg_6033>.
+	Found 19-bit shift register for signal <shift_reg_6013>.
+	Found 5-bit shift register for signal <shift_reg_6005>.
+	Found 13-bit shift register for signal <shift_reg_5989>.
+	Found 10-bit shift register for signal <shift_reg_5974>.
+	Found 4-bit shift register for signal <shift_reg_5968>.
+	Found 4-bit shift register for signal <shift_reg_5963>.
+	Found 6-bit shift register for signal <shift_reg_5956>.
+	Found 11-bit shift register for signal <shift_reg_5944>.
+	Found 4-bit shift register for signal <shift_reg_5939>.
+	Found 6-bit shift register for signal <shift_reg_5932>.
+	Found 14-bit shift register for signal <shift_reg_5917>.
+	Found 4-bit shift register for signal <shift_reg_5911>.
+	Found 4-bit shift register for signal <shift_reg_5906>.
+	Found 4-bit shift register for signal <shift_reg_5897>.
+	Found 4-bit shift register for signal <shift_reg_5892>.
+	Found 8-bit shift register for signal <shift_reg_5880>.
+	Found 13-bit shift register for signal <shift_reg_5866>.
+	Found 34-bit shift register for signal <shift_reg_5827>.
+	Found 10-bit shift register for signal <shift_reg_5816>.
+	Found 8-bit shift register for signal <shift_reg_5807>.
+	Found 8-bit shift register for signal <shift_reg_5798>.
+	Found 8-bit shift register for signal <shift_reg_5789>.
+	Found 8-bit shift register for signal <shift_reg_5780>.
+	Found 7-bit shift register for signal <shift_reg_5771>.
+	Found 19-bit shift register for signal <shift_reg_5751>.
+	Found 17-bit shift register for signal <shift_reg_5731>.
+	Found 10-bit shift register for signal <shift_reg_5707>.
+	Found 6-bit shift register for signal <shift_reg_5700>.
+	Found 9-bit shift register for signal <shift_reg_5690>.
+	Found 7-bit shift register for signal <shift_reg_5682>.
+	Found 14-bit shift register for signal <shift_reg_5662>.
+	Found 4-bit shift register for signal <shift_reg_5656>.
+	Found 13-bit shift register for signal <shift_reg_5632>.
+	Found 18-bit shift register for signal <shift_reg_5610>.
+	Found 4-bit shift register for signal <shift_reg_5605>.
+	Found 8-bit shift register for signal <shift_reg_5596>.
+	Found 11-bit shift register for signal <shift_reg_5584>.
+	Found 5-bit shift register for signal <shift_reg_5578>.
+	Found 10-bit shift register for signal <shift_reg_5567>.
+	Found 7-bit shift register for signal <shift_reg_5559>.
+	Found 17-bit shift register for signal <shift_reg_5535>.
+	Found 4-bit shift register for signal <shift_reg_5530>.
+	Found 9-bit shift register for signal <shift_reg_5518>.
+	Found 15-bit shift register for signal <shift_reg_5502>.
+	Found 9-bit shift register for signal <shift_reg_5492>.
+	Found 21-bit shift register for signal <shift_reg_5462>.
+	Found 33-bit shift register for signal <shift_reg_5428>.
+	Found 4-bit shift register for signal <shift_reg_5423>.
+	Found 7-bit shift register for signal <shift_reg_5414>.
+	Found 11-bit shift register for signal <shift_reg_5397>.
+	Found 9-bit shift register for signal <shift_reg_5384>.
+	Found 9-bit shift register for signal <shift_reg_5374>.
+	Found 14-bit shift register for signal <shift_reg_5359>.
+	Found 6-bit shift register for signal <shift_reg_5352>.
+	Found 13-bit shift register for signal <shift_reg_5334>.
+	Found 7-bit shift register for signal <shift_reg_5326>.
+	Found 4-bit shift register for signal <shift_reg_5321>.
+	Found 7-bit shift register for signal <shift_reg_5313>.
+	Found 5-bit shift register for signal <shift_reg_5307>.
+	Found 5-bit shift register for signal <shift_reg_5301>.
+	Found 8-bit shift register for signal <shift_reg_5292>.
+	Found 4-bit shift register for signal <shift_reg_5283>.
+	Found 4-bit shift register for signal <shift_reg_5278>.
+	Found 14-bit shift register for signal <shift_reg_5255>.
+	Found 4-bit shift register for signal <shift_reg_5244>.
+	Found 6-bit shift register for signal <shift_reg_5237>.
+	Found 8-bit shift register for signal <shift_reg_5228>.
+	Found 12-bit shift register for signal <shift_reg_5215>.
+	Found 12-bit shift register for signal <shift_reg_5192>.
+	Found 7-bit shift register for signal <shift_reg_5181>.
+	Found 6-bit shift register for signal <shift_reg_5172>.
+	Found 9-bit shift register for signal <shift_reg_5162>.
+	Found 13-bit shift register for signal <shift_reg_5144>.
+	Found 6-bit shift register for signal <shift_reg_5136>.
+	Found 9-bit shift register for signal <shift_reg_5126>.
+	Found 14-bit shift register for signal <shift_reg_5111>.
+	Found 5-bit shift register for signal <shift_reg_5102>.
+	Found 14-bit shift register for signal <shift_reg_5087>.
+	Found 6-bit shift register for signal <shift_reg_5080>.
+	Found 4-bit shift register for signal <shift_reg_5074>.
+	Found 6-bit shift register for signal <shift_reg_5067>.
+	Found 11-bit shift register for signal <shift_reg_5055>.
+	Found 26-bit shift register for signal <shift_reg_5026>.
+	Found 10-bit shift register for signal <shift_reg_5010>.
+	Found 7-bit shift register for signal <shift_reg_5002>.
+	Found 36-bit shift register for signal <shift_reg_4957>.
+	Found 4-bit shift register for signal <shift_reg_4950>.
+	Found 4-bit shift register for signal <shift_reg_4945>.
+	Found 4-bit shift register for signal <shift_reg_4940>.
+	Found 5-bit shift register for signal <shift_reg_4934>.
+	Found 25-bit shift register for signal <shift_reg_4908>.
+	Found 6-bit shift register for signal <shift_reg_4901>.
+	Found 7-bit shift register for signal <shift_reg_4887>.
+	Found 4-bit shift register for signal <shift_reg_4878>.
+	Found 15-bit shift register for signal <shift_reg_4857>.
+	Found 13-bit shift register for signal <shift_reg_4836>.
+	Found 13-bit shift register for signal <shift_reg_4822>.
+	Found 11-bit shift register for signal <shift_reg_4810>.
+	Found 15-bit shift register for signal <shift_reg_4794>.
+	Found 9-bit shift register for signal <shift_reg_4780>.
+	Found 4-bit shift register for signal <shift_reg_4775>.
+	Found 5-bit shift register for signal <shift_reg_4769>.
+	Found 6-bit shift register for signal <shift_reg_4762>.
+	Found 6-bit shift register for signal <shift_reg_4755>.
+	Found 12-bit shift register for signal <shift_reg_4741>.
+	Found 19-bit shift register for signal <shift_reg_4721>.
+	Found 8-bit shift register for signal <shift_reg_4708>.
+	Found 13-bit shift register for signal <shift_reg_4692>.
+	Found 4-bit shift register for signal <shift_reg_4687>.
+	Found 11-bit shift register for signal <shift_reg_4675>.
+	Found 6-bit shift register for signal <shift_reg_4668>.
+	Found 9-bit shift register for signal <shift_reg_4658>.
+	Found 4-bit shift register for signal <shift_reg_4650>.
+	Found 12-bit shift register for signal <shift_reg_4637>.
+	Found 14-bit shift register for signal <shift_reg_4618>.
+	Found 6-bit shift register for signal <shift_reg_4611>.
+	Found 4-bit shift register for signal <shift_reg_4606>.
+	Found 8-bit shift register for signal <shift_reg_4597>.
+	Found 4-bit shift register for signal <shift_reg_4592>.
+	Found 6-bit shift register for signal <shift_reg_4582>.
+	Found 6-bit shift register for signal <shift_reg_4575>.
+	Found 14-bit shift register for signal <shift_reg_4560>.
+	Found 4-bit shift register for signal <shift_reg_4546>.
+	Found 7-bit shift register for signal <shift_reg_4539>.
+	Found 7-bit shift register for signal <shift_reg_4522>.
+	Found 17-bit shift register for signal <shift_reg_4486>.
+	Found 8-bit shift register for signal <shift_reg_4474>.
+	Found 5-bit shift register for signal <shift_reg_4463>.
+	Found 12-bit shift register for signal <shift_reg_4450>.
+	Found 11-bit shift register for signal <shift_reg_4438>.
+	Found 7-bit shift register for signal <shift_reg_4429>.
+	Found 9-bit shift register for signal <shift_reg_4419>.
+	Found 7-bit shift register for signal <shift_reg_4411>.
+	Found 5-bit shift register for signal <shift_reg_4403>.
+	Found 4-bit shift register for signal <shift_reg_4394>.
+	Found 12-bit shift register for signal <shift_reg_4381>.
+	Found 7-bit shift register for signal <shift_reg_4370>.
+	Found 28-bit shift register for signal <shift_reg_4341>.
+	Found 6-bit shift register for signal <shift_reg_4333>.
+	Found 7-bit shift register for signal <shift_reg_4325>.
+	Found 5-bit shift register for signal <shift_reg_4319>.
+	Found 5-bit shift register for signal <shift_reg_4313>.
+	Found 11-bit shift register for signal <shift_reg_4300>.
+	Found 19-bit shift register for signal <shift_reg_4272>.
+	Found 48-bit shift register for signal <shift_reg_4222>.
+	Found 9-bit shift register for signal <shift_reg_4210>.
+	Found 10-bit shift register for signal <shift_reg_4191>.
+	Found 20-bit shift register for signal <shift_reg_4170>.
+	Found 7-bit shift register for signal <shift_reg_4162>.
+	Found 4-bit shift register for signal <shift_reg_4157>.
+	Found 17-bit shift register for signal <shift_reg_4138>.
+	Found 4-bit shift register for signal <shift_reg_4132>.
+	Found 18-bit shift register for signal <shift_reg_4112>.
+	Found 14-bit shift register for signal <shift_reg_4097>.
+	Found 8-bit shift register for signal <shift_reg_4088>.
+	Found 19-bit shift register for signal <shift_reg_4068>.
+	Found 11-bit shift register for signal <shift_reg_4056>.
+	Found 20-bit shift register for signal <shift_reg_4035>.
+	Found 14-bit shift register for signal <shift_reg_4009>.
+	Found 14-bit shift register for signal <shift_reg_3994>.
+	Found 4-bit shift register for signal <shift_reg_3986>.
+	Found 16-bit shift register for signal <shift_reg_3967>.
+	Found 20-bit shift register for signal <shift_reg_3946>.
+	Found 11-bit shift register for signal <shift_reg_3934>.
+	Found 7-bit shift register for signal <shift_reg_3918>.
+	Found 17-bit shift register for signal <shift_reg_3900>.
+	Found 16-bit shift register for signal <shift_reg_3878>.
+	Found 7-bit shift register for signal <shift_reg_3870>.
+	Found 4-bit shift register for signal <shift_reg_3865>.
+	Found 11-bit shift register for signal <shift_reg_3853>.
+	Found 14-bit shift register for signal <shift_reg_3836>.
+	Found 8-bit shift register for signal <shift_reg_3827>.
+	Found 6-bit shift register for signal <shift_reg_3818>.
+	Found 9-bit shift register for signal <shift_reg_3808>.
+	Found 9-bit shift register for signal <shift_reg_3796>.
+	Found 4-bit shift register for signal <shift_reg_3791>.
+	Found 7-bit shift register for signal <shift_reg_3782>.
+	Found 9-bit shift register for signal <shift_reg_3772>.
+	Found 19-bit shift register for signal <shift_reg_3752>.
+	Found 4-bit shift register for signal <shift_reg_3745>.
+	Found 17-bit shift register for signal <shift_reg_3727>.
+	Found 5-bit shift register for signal <shift_reg_3717>.
+	Found 4-bit shift register for signal <shift_reg_3712>.
+	Found 8-bit shift register for signal <shift_reg_3703>.
+	Found 6-bit shift register for signal <shift_reg_3696>.
+	Found 35-bit shift register for signal <shift_reg_3653>.
+	Found 5-bit shift register for signal <shift_reg_3647>.
+	Found 14-bit shift register for signal <shift_reg_3624>.
+	Found 9-bit shift register for signal <shift_reg_3609>.
+	Found 8-bit shift register for signal <shift_reg_3600>.
+	Found 10-bit shift register for signal <shift_reg_3589>.
+	Found 23-bit shift register for signal <shift_reg_3565>.
+	Found 6-bit shift register for signal <shift_reg_3558>.
+	Found 11-bit shift register for signal <shift_reg_3546>.
+	Found 7-bit shift register for signal <shift_reg_3538>.
+	Found 7-bit shift register for signal <shift_reg_3530>.
+	Found 8-bit shift register for signal <shift_reg_3518>.
+	Found 11-bit shift register for signal <shift_reg_3506>.
+	Found 15-bit shift register for signal <shift_reg_3490>.
+	Found 17-bit shift register for signal <shift_reg_3472>.
+	Found 5-bit shift register for signal <shift_reg_3466>.
+	Found 12-bit shift register for signal <shift_reg_3452>.
+	Found 17-bit shift register for signal <shift_reg_3428>.
+	Found 4-bit shift register for signal <shift_reg_3404>.
+	Found 7-bit shift register for signal <shift_reg_3390>.
+	Found 7-bit shift register for signal <shift_reg_3380>.
+	Found 8-bit shift register for signal <shift_reg_3366>.
+	Found 11-bit shift register for signal <shift_reg_3350>.
+	Found 10-bit shift register for signal <shift_reg_3339>.
+	Found 5-bit shift register for signal <shift_reg_3333>.
+	Found 5-bit shift register for signal <shift_reg_3325>.
+	Found 7-bit shift register for signal <shift_reg_3317>.
+	Found 5-bit shift register for signal <shift_reg_3308>.
+	Found 24-bit shift register for signal <shift_reg_3280>.
+	Found 6-bit shift register for signal <shift_reg_3273>.
+	Found 9-bit shift register for signal <shift_reg_3263>.
+	Found 12-bit shift register for signal <shift_reg_3247>.
+	Found 4-bit shift register for signal <shift_reg_3236>.
+	Found 16-bit shift register for signal <shift_reg_3216>.
+	Found 13-bit shift register for signal <shift_reg_3202>.
+	Found 4-bit shift register for signal <shift_reg_3192>.
+	Found 14-bit shift register for signal <shift_reg_3177>.
+	Found 5-bit shift register for signal <shift_reg_3171>.
+	Found 7-bit shift register for signal <shift_reg_3162>.
+	Found 8-bit shift register for signal <shift_reg_3150>.
+	Found 4-bit shift register for signal <shift_reg_3145>.
+	Found 8-bit shift register for signal <shift_reg_3136>.
+	Found 22-bit shift register for signal <shift_reg_3113>.
+	Found 5-bit shift register for signal <shift_reg_3107>.
+	Found 28-bit shift register for signal <shift_reg_3078>.
+	Found 6-bit shift register for signal <shift_reg_3069>.
+	Found 15-bit shift register for signal <shift_reg_3049>.
+	Found 12-bit shift register for signal <shift_reg_3033>.
+	Found 10-bit shift register for signal <shift_reg_3022>.
+	Found 10-bit shift register for signal <shift_reg_3011>.
+	Found 12-bit shift register for signal <shift_reg_2998>.
+	Found 6-bit shift register for signal <shift_reg_2988>.
+	Found 21-bit shift register for signal <shift_reg_2966>.
+	Found 7-bit shift register for signal <shift_reg_2956>.
+	Found 17-bit shift register for signal <shift_reg_2938>.
+	Found 8-bit shift register for signal <shift_reg_2929>.
+	Found 16-bit shift register for signal <shift_reg_2912>.
+	Found 5-bit shift register for signal <shift_reg_2906>.
+	Found 4-bit shift register for signal <shift_reg_2901>.
+	Found 9-bit shift register for signal <shift_reg_2887>.
+	Found 16-bit shift register for signal <shift_reg_2861>.
+	Found 33-bit shift register for signal <shift_reg_2827>.
+	Found 19-bit shift register for signal <shift_reg_2805>.
+	Found 26-bit shift register for signal <shift_reg_2778>.
+	Found 7-bit shift register for signal <shift_reg_2770>.
+	Found 4-bit shift register for signal <shift_reg_2758>.
+	Found 7-bit shift register for signal <shift_reg_2747>.
+	Found 13-bit shift register for signal <shift_reg_2721>.
+	Found 7-bit shift register for signal <shift_reg_2713>.
+	Found 15-bit shift register for signal <shift_reg_2697>.
+	Found 8-bit shift register for signal <shift_reg_2688>.
+	Found 10-bit shift register for signal <shift_reg_2675>.
+	Found 5-bit shift register for signal <shift_reg_2664>.
+	Found 6-bit shift register for signal <shift_reg_2657>.
+	Found 16-bit shift register for signal <shift_reg_2636>.
+	Found 5-bit shift register for signal <shift_reg_2630>.
+	Found 6-bit shift register for signal <shift_reg_2623>.
+	Found 17-bit shift register for signal <shift_reg_2605>.
+	Found 9-bit shift register for signal <shift_reg_2592>.
+	Found 7-bit shift register for signal <shift_reg_2580>.
+	Found 6-bit shift register for signal <shift_reg_2573>.
+	Found 12-bit shift register for signal <shift_reg_2560>.
+	Found 8-bit shift register for signal <shift_reg_2551>.
+	Found 4-bit shift register for signal <shift_reg_2542>.
+	Found 6-bit shift register for signal <shift_reg_2533>.
+	Found 4-bit shift register for signal <shift_reg_2528>.
+	Found 7-bit shift register for signal <shift_reg_2511>.
+	Found 6-bit shift register for signal <shift_reg_2500>.
+	Found 36-bit shift register for signal <shift_reg_2463>.
+	Found 6-bit shift register for signal <shift_reg_2453>.
+	Found 7-bit shift register for signal <shift_reg_2445>.
+	Found 11-bit shift register for signal <shift_reg_2433>.
+	Found 8-bit shift register for signal <shift_reg_2421>.
+	Found 4-bit shift register for signal <shift_reg_2415>.
+	Found 25-bit shift register for signal <shift_reg_2382>.
+	Found 13-bit shift register for signal <shift_reg_2366>.
+	Found 12-bit shift register for signal <shift_reg_2353>.
+	Found 5-bit shift register for signal <shift_reg_2347>.
+	Found 5-bit shift register for signal <shift_reg_2340>.
+	Found 5-bit shift register for signal <shift_reg_2334>.
+	Found 8-bit shift register for signal <shift_reg_2325>.
+	Found 5-bit shift register for signal <shift_reg_2319>.
+	Found 10-bit shift register for signal <shift_reg_2307>.
+	Found 4-bit shift register for signal <shift_reg_2299>.
+	Found 12-bit shift register for signal <shift_reg_2286>.
+	Found 7-bit shift register for signal <shift_reg_2266>.
+	Found 9-bit shift register for signal <shift_reg_2256>.
+	Found 6-bit shift register for signal <shift_reg_2249>.
+	Found 12-bit shift register for signal <shift_reg_2236>.
+	Found 43-bit shift register for signal <shift_reg_2185>.
+	Found 6-bit shift register for signal <shift_reg_2178>.
+	Found 4-bit shift register for signal <shift_reg_2173>.
+	Found 6-bit shift register for signal <shift_reg_2158>.
+	Found 9-bit shift register for signal <shift_reg_2148>.
+	Found 12-bit shift register for signal <shift_reg_2130>.
+	Found 9-bit shift register for signal <shift_reg_2120>.
+	Found 11-bit shift register for signal <shift_reg_2108>.
+	Found 5-bit shift register for signal <shift_reg_2102>.
+	Found 11-bit shift register for signal <shift_reg_2083>.
+	Found 8-bit shift register for signal <shift_reg_2071>.
+	Found 9-bit shift register for signal <shift_reg_2061>.
+	Found 8-bit shift register for signal <shift_reg_2049>.
+	Found 14-bit shift register for signal <shift_reg_2025>.
+	Found 9-bit shift register for signal <shift_reg_2015>.
+	Found 4-bit shift register for signal <shift_reg_2010>.
+	Found 14-bit shift register for signal <shift_reg_1986>.
+	Found 17-bit shift register for signal <shift_reg_1968>.
+	Found 16-bit shift register for signal <shift_reg_1951>.
+	Found 18-bit shift register for signal <shift_reg_1926>.
+	Found 14-bit shift register for signal <shift_reg_1901>.
+	Found 16-bit shift register for signal <shift_reg_1884>.
+	Found 7-bit shift register for signal <shift_reg_1876>.
+	Found 11-bit shift register for signal <shift_reg_1859>.
+	Found 7-bit shift register for signal <shift_reg_1845>.
+	Found 13-bit shift register for signal <shift_reg_1831>.
+	Found 13-bit shift register for signal <shift_reg_1817>.
+	Found 6-bit shift register for signal <shift_reg_1808>.
+	Found 20-bit shift register for signal <shift_reg_1787>.
+	Found 15-bit shift register for signal <shift_reg_1764>.
+	Found 6-bit shift register for signal <shift_reg_1757>.
+	Found 9-bit shift register for signal <shift_reg_1747>.
+	Found 8-bit shift register for signal <shift_reg_1735>.
+	Found 19-bit shift register for signal <shift_reg_1710>.
+	Found 8-bit shift register for signal <shift_reg_1699>.
+	Found 17-bit shift register for signal <shift_reg_1678>.
+	Found 33-bit shift register for signal <shift_reg_1641>.
+	Found 4-bit shift register for signal <shift_reg_1636>.
+	Found 4-bit shift register for signal <shift_reg_1630>.
+	Found 4-bit shift register for signal <shift_reg_1625>.
+	Found 5-bit shift register for signal <shift_reg_1619>.
+	Found 13-bit shift register for signal <shift_reg_1603>.
+	Found 6-bit shift register for signal <shift_reg_1596>.
+	Found 8-bit shift register for signal <shift_reg_1579>.
+	Found 10-bit shift register for signal <shift_reg_1563>.
+	Found 15-bit shift register for signal <shift_reg_1546>.
+	Found 19-bit shift register for signal <shift_reg_1526>.
+	Found 16-bit shift register for signal <shift_reg_1509>.
+	Found 11-bit shift register for signal <shift_reg_1491>.
+	Found 18-bit shift register for signal <shift_reg_1472>.
+	Found 10-bit shift register for signal <shift_reg_1461>.
+	Found 12-bit shift register for signal <shift_reg_1448>.
+	Found 10-bit shift register for signal <shift_reg_1434>.
+	Found 41-bit shift register for signal <shift_reg_1385>.
+	Found 6-bit shift register for signal <shift_reg_1378>.
+	Found 26-bit shift register for signal <shift_reg_1351>.
+	Found 10-bit shift register for signal <shift_reg_1338>.
+	Found 23-bit shift register for signal <shift_reg_1314>.
+	Found 6-bit shift register for signal <shift_reg_1305>.
+	Found 4-bit shift register for signal <shift_reg_1300>.
+	Found 32-bit shift register for signal <shift_reg_1267>.
+	Found 11-bit shift register for signal <shift_reg_1254>.
+	Found 5-bit shift register for signal <shift_reg_1245>.
+	Found 7-bit shift register for signal <shift_reg_1234>.
+	Found 10-bit shift register for signal <shift_reg_1223>.
+	Found 4-bit shift register for signal <shift_reg_1218>.
+	Found 17-bit shift register for signal <shift_reg_1200>.
+	Found 21-bit shift register for signal <shift_reg_1178>.
+	Found 6-bit shift register for signal <shift_reg_1171>.
+	Found 13-bit shift register for signal <shift_reg_1157>.
+	Found 10-bit shift register for signal <shift_reg_1142>.
+	Found 4-bit shift register for signal <shift_reg_1135>.
+	Found 4-bit shift register for signal <shift_reg_1129>.
+	Found 4-bit shift register for signal <shift_reg_1118>.
+	Found 26-bit shift register for signal <shift_reg_1088>.
+	Found 4-bit shift register for signal <shift_reg_1083>.
+	Found 5-bit shift register for signal <shift_reg_1070>.
+	Found 8-bit shift register for signal <shift_reg_1061>.
+	Found 4-bit shift register for signal <shift_reg_1055>.
+	Found 23-bit shift register for signal <shift_reg_1028>.
+	Found 4-bit shift register for signal <shift_reg_1023>.
+	Found 8-bit shift register for signal <shift_reg_1005>.
+	Found 11-bit shift register for signal <shift_reg_989>.
+	Found 6-bit shift register for signal <shift_reg_982>.
+	Found 6-bit shift register for signal <shift_reg_975>.
+	Found 7-bit shift register for signal <shift_reg_963>.
+	Found 9-bit shift register for signal <shift_reg_953>.
+	Found 6-bit shift register for signal <shift_reg_946>.
+	Found 11-bit shift register for signal <shift_reg_934>.
+	Found 8-bit shift register for signal <shift_reg_925>.
+	Found 20-bit shift register for signal <shift_reg_904>.
+	Found 6-bit shift register for signal <shift_reg_893>.
+	Found 8-bit shift register for signal <shift_reg_882>.
+	Found 7-bit shift register for signal <shift_reg_874>.
+	Found 14-bit shift register for signal <shift_reg_855>.
+	Found 4-bit shift register for signal <shift_reg_850>.
+	Found 6-bit shift register for signal <shift_reg_835>.
+	Found 24-bit shift register for signal <shift_reg_810>.
+	Found 11-bit shift register for signal <shift_reg_795>.
+	Found 6-bit shift register for signal <shift_reg_784>.
+	Found 13-bit shift register for signal <shift_reg_763>.
+	Found 4-bit shift register for signal <shift_reg_758>.
+	Found 18-bit shift register for signal <shift_reg_735>.
+	Found 13-bit shift register for signal <shift_reg_721>.
+	Found 12-bit shift register for signal <shift_reg_708>.
+	Found 14-bit shift register for signal <shift_reg_690>.
+	Found 13-bit shift register for signal <shift_reg_676>.
+	Found 7-bit shift register for signal <shift_reg_665>.
+	Found 19-bit shift register for signal <shift_reg_645>.
+	Found 6-bit shift register for signal <shift_reg_638>.
+	Found 4-bit shift register for signal <shift_reg_631>.
+	Found 19-bit shift register for signal <shift_reg_606>.
+	Found 14-bit shift register for signal <shift_reg_591>.
+	Found 10-bit shift register for signal <shift_reg_580>.
+	Found 22-bit shift register for signal <shift_reg_554>.
+	Found 6-bit shift register for signal <shift_reg_540>.
+	Found 12-bit shift register for signal <shift_reg_523>.
+	Found 16-bit shift register for signal <shift_reg_506>.
+	Found 5-bit shift register for signal <shift_reg_500>.
+	Found 8-bit shift register for signal <shift_reg_490>.
+	Found 9-bit shift register for signal <shift_reg_480>.
+	Found 24-bit shift register for signal <shift_reg_454>.
+	Found 4-bit shift register for signal <shift_reg_449>.
+	Found 7-bit shift register for signal <shift_reg_441>.
+	Found 4-bit shift register for signal <shift_reg_436>.
+	Found 15-bit shift register for signal <shift_reg_420>.
+	Found 5-bit shift register for signal <shift_reg_414>.
+	Found 5-bit shift register for signal <shift_reg_405>.
+	Found 12-bit shift register for signal <shift_reg_389>.
+	Found 4-bit shift register for signal <shift_reg_384>.
+	Found 4-bit shift register for signal <shift_reg_375>.
+	Found 7-bit shift register for signal <shift_reg_367>.
+	Found 12-bit shift register for signal <shift_reg_354>.
+	Found 15-bit shift register for signal <shift_reg_325>.
+	Found 4-bit shift register for signal <shift_reg_318>.
+	Found 28-bit shift register for signal <shift_reg_289>.
+	Found 38-bit shift register for signal <shift_reg_250>.
+	Found 6-bit shift register for signal <shift_reg_243>.
+	Found 23-bit shift register for signal <shift_reg_219>.
+	Found 14-bit shift register for signal <shift_reg_204>.
+	Found 6-bit shift register for signal <shift_reg_195>.
+	Found 20-bit shift register for signal <shift_reg_174>.
+	Found 5-bit shift register for signal <shift_reg_168>.
+	Found 14-bit shift register for signal <shift_reg_153>.
+	Found 6-bit shift register for signal <shift_reg_146>.
+	Found 6-bit shift register for signal <shift_reg_139>.
+	Found 6-bit shift register for signal <shift_reg_125>.
+	Found 11-bit shift register for signal <shift_reg_112>.
+	Found 13-bit shift register for signal <shift_reg_96>.
+	Found 8-bit shift register for signal <shift_reg_87>.
+	Found 11-bit shift register for signal <shift_reg_75>.
+	Found 7-bit shift register for signal <shift_reg_61>.
+	Found 5-bit shift register for signal <shift_reg_55>.
+	Found 9-bit shift register for signal <shift_reg_45>.
+	Found 6-bit shift register for signal <shift_reg_38>.
+	Found 13-bit shift register for signal <shift_reg_22>.
+	Found 9-bit shift register for signal <shift_reg_12>.
+	Found 5-bit shift register for signal <shift_reg_3>.
+Unit <sigverifier> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 11965
+ Flip-Flops                                            : 11965
+# Shift Registers                                      : 740
+ 10-bit shift register                                 : 30
+ 11-bit shift register                                 : 34
+ 12-bit shift register                                 : 32
+ 13-bit shift register                                 : 28
+ 14-bit shift register                                 : 34
+ 15-bit shift register                                 : 20
+ 16-bit shift register                                 : 15
+ 17-bit shift register                                 : 20
+ 18-bit shift register                                 : 14
+ 19-bit shift register                                 : 17
+ 20-bit shift register                                 : 12
+ 21-bit shift register                                 : 6
+ 22-bit shift register                                 : 4
+ 23-bit shift register                                 : 4
+ 24-bit shift register                                 : 5
+ 25-bit shift register                                 : 3
+ 26-bit shift register                                 : 6
+ 28-bit shift register                                 : 4
+ 30-bit shift register                                 : 1
+ 32-bit shift register                                 : 4
+ 33-bit shift register                                 : 4
+ 34-bit shift register                                 : 2
+ 35-bit shift register                                 : 1
+ 36-bit shift register                                 : 2
+ 38-bit shift register                                 : 1
+ 4-bit shift register                                  : 110
+ 41-bit shift register                                 : 1
+ 43-bit shift register                                 : 1
+ 48-bit shift register                                 : 1
+ 5-bit shift register                                  : 62
+ 6-bit shift register                                  : 85
+ 7-bit shift register                                  : 69
+ 8-bit shift register                                  : 56
+ 9-bit shift register                                  : 52
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : sigverifier.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 11640
+#      GND                         : 4
+#      INV                         : 3
+#      LUT1                        : 9
+#      LUT2                        : 5644
+#      LUT3                        : 6
+#      LUT4                        : 111
+#      LUT5                        : 4964
+#      LUT6                        : 876
+#      MUXCY                       : 9
+#      VCC                         : 4
+#      XORCY                       : 10
+# FlipFlops/Latches                : 12769
+#      FD                          : 9
+#      FDE                         : 9
+#      FDR                         : 2
+#      FDRE                        : 11396
+#      FDSE                        : 1348
+#      LD                          : 5
+# RAMS                             : 30
+#      RAMB36E1                    : 30
+# Shift Registers                  : 749
+#      SRLC16E                     : 647
+#      SRLC32E                     : 102
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 2
+#      OBUF                        : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx240tff784-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:           12768  out of  301440     4%  
+ Number of Slice LUTs:                12362  out of  150720     8%  
+    Number used as Logic:             11613  out of  150720     7%  
+    Number used as Memory:              749  out of  58400     1%  
+       Number used as SRL:              749
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:  14035
+   Number with an unused Flip Flop:    1267  out of  14035     9%  
+   Number with an unused LUT:          1673  out of  14035    11%  
+   Number of fully used LUT-FF pairs: 11095  out of  14035    79%  
+   Number of unique control sets:        11
+
+IO Utilization: 
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    400     1%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               30  out of    416     7%  
+    Number using Block RAM only:         30
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                 | Clock buffer(FF name)  | Load  |
+-------------------------------------------------------------+------------------------+-------+
+clk                                                          | BUFGP                  | 13543 |
+state[1]_PWR_4_o_Mux_28_o(state[1]_PWR_4_o_Mux_28_o1:O)      | NONE(*)(done)          | 1     |
+state_FSM_FFd2                                               | NONE(tmp_sel_1)        | 3     |
+state[1]_PWR_3_o_Mux_26_o(Mmux_state[1]_PWR_3_o_Mux_26_o11:O)| NONE(*)(add_sel)       | 1     |
+-------------------------------------------------------------+------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                         | Buffer(FF name)                                                                                                                       | Load  |
+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------+
+mem_top/mem0/N1(mem_top/mem0/XST_GND:G)| NONE(mem_top/mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram)| 20    |
+mem_top/mem1/N1(mem_top/mem1/XST_GND:G)| NONE(mem_top/mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram)| 20    |
+mem_top/mem2/N1(mem_top/mem2/XST_GND:G)| NONE(mem_top/mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/SP.SIMPLE_PRIM36.ram)| 20    |
+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.786ns (Maximum Frequency: 559.848MHz)
+   Minimum input arrival time before clock: 0.963ns
+   Maximum output required time after clock: 3.967ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.786ns (frequency: 559.848MHz)
+  Total number of paths / destination ports: 35114 / 17512
+-------------------------------------------------------------------------
+Delay:               1.786ns (Levels of Logic = 2)
+  Source:            cnt2_4 (FF)
+  Destination:       mem_addr_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cnt2_4 to mem_addr_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.280   0.606  cnt2_4 (cnt2_4)
+     LUT6:I1->O            7   0.053   0.324  GND_1_o_GND_1_o_equal_12_o<5>1 (GND_1_o_GND_1_o_equal_12_o)
+     LUT5:I4->O           10   0.053   0.321  Mmux_mem_sel11 (mem_sel)
+     FDRE:CE                   0.149          mem_addr_0
+    ----------------------------------------
+    Total                      1.786ns (0.535ns logic, 1.251ns route)
+                                       (30.0% logic, 70.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              0.963ns (Levels of Logic = 2)
+  Source:            start (PAD)
+  Destination:       mem_addr_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: start to mem_addr_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.003   0.438  start_IBUF (start_IBUF)
+     LUT5:I2->O           10   0.053   0.321  Mmux_mem_sel11 (mem_sel)
+     FDRE:CE                   0.149          mem_addr_0
+    ----------------------------------------
+    Total                      0.963ns (0.205ns logic, 0.758ns route)
+                                       (21.3% logic, 78.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 4900 / 1
+-------------------------------------------------------------------------
+Offset:              3.967ns (Levels of Logic = 8)
+  Source:            sig_reg_3127 (FF)
+  Destination:       sigvalid (PAD)
+  Source Clock:      clk rising
+
+  Data Path: sig_reg_3127 to sigvalid
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.280   0.599  sig_reg_3127 (sig_reg_3127)
+     LUT6:I0->O            1   0.053   0.594  sigvalid<0>915 (sigvalid<0>914)
+     LUT6:I0->O            1   0.053   0.296  sigvalid<0>923_SW0_SW0 (N49)
+     LUT6:I5->O            1   0.053   0.296  sigvalid<0>923_SW0 (N27)
+     LUT6:I5->O            1   0.053   0.357  sigvalid<0>923 (sigvalid<0>922)
+     LUT6:I4->O            1   0.053   0.594  sigvalid<0>985 (sigvalid<0>984)
+     LUT6:I0->O            1   0.053   0.296  sigvalid<0>1054 (sigvalid<0>1053)
+     LUT4:I3->O            1   0.053   0.279  sigvalid<0>1055 (sigvalid_OBUF)
+     OBUF:I->O                 0.003          sigvalid_OBUF (sigvalid)
+    ----------------------------------------
+    Total                      3.967ns (0.654ns logic, 3.313ns route)
+                                       (16.5% logic, 83.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state_FSM_FFd2'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.564ns (Levels of Logic = 1)
+  Source:            finish (LATCH)
+  Destination:       finish (PAD)
+  Source Clock:      state_FSM_FFd2 rising
+
+  Data Path: finish to finish
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.282   0.279  finish (finish_OBUF)
+     OBUF:I->O                 0.003          finish_OBUF (finish)
+    ----------------------------------------
+    Total                      0.564ns (0.285ns logic, 0.279ns route)
+                                       (50.5% logic, 49.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+clk                      |    1.786|         |         |         |
+state[1]_PWR_3_o_Mux_26_o|         |    1.024|         |         |
+state[1]_PWR_4_o_Mux_28_o|         |    0.931|         |         |
+state_FSM_FFd2           |         |    1.747|         |         |
+-------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[1]_PWR_3_o_Mux_26_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    0.850|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[1]_PWR_4_o_Mux_28_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    0.774|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state_FSM_FFd2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    0.785|         |    1.020|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 77.00 secs
+Total CPU time to Xst completion: 76.23 secs
+ 
+--> 
+
+
+Total memory usage is 400964 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

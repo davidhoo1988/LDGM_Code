@@ -1,0 +1,276 @@
+Release 13.2 par O.61xd (lin)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+david-desktop::  Wed Apr 13 21:12:36 2016
+
+par -w -intstyle ise -ol high -mt off siggen_map.ncd siggen.ncd siggen.pcf 
+
+
+Constraints file: siggen.pcf.
+Loading device for application Rf_Device from file '6vlx240t.nph' in environment /home/david/Xilinx/ISE13.2/ISE_DS/ISE/.
+   "siggen" is an NCD, version 3.2, device xc6vlx240t, package ff784, speed -3
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.15 2011-06-20".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                22,803 out of 301,440    7%
+    Number used as Flip Flops:              22,718
+    Number used as Latches:                     85
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                     23,603 out of 150,720   15%
+    Number used as logic:                   23,460 out of 150,720   15%
+      Number using O6 output only:          22,134
+      Number using O5 output only:              30
+      Number using O5 and O6:                1,296
+      Number used as ROM:                        0
+    Number used as Memory:                     109 out of  58,400    1%
+      Number used as Dual Port RAM:             10
+        Number using O6 output only:             2
+        Number using O5 output only:             0
+        Number using O5 and O6:                  8
+      Number used as Single Port RAM:           80
+        Number using O6 output only:            80
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Shift Register:            19
+        Number using O6 output only:            19
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+    Number used exclusively as route-thrus:     34
+      Number with same-slice register load:     31
+      Number with same-slice carry load:         3
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 7,138 out of  37,680   18%
+  Number of LUT Flip Flop pairs used:       23,840
+    Number with an unused Flip Flop:         2,249 out of  23,840    9%
+    Number with an unused LUT:                 237 out of  23,840    1%
+    Number of fully used LUT-FF pairs:      21,354 out of  23,840   89%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of 301,440    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       186 out of     400   46%
+    IOB Flip Flops:                              3
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                 60 out of     416   14%
+    Number using RAMB36E1 only:                 60
+    Number using FIFO36E1 only:                  0
+  Number of RAMB18E1/FIFO18E1s:                  2 out of     832    1%
+    Number using RAMB18E1 only:                  2
+    Number using FIFO18E1 only:                  0
+  Number of BUFG/BUFGCTRLs:                      3 out of      32    9%
+    Number used as BUFGs:                        3
+    Number used as BUFGCTRLs:                    0
+  Number of ILOGICE1/ISERDESE1s:                 0 out of     720    0%
+  Number of OLOGICE1/OSERDESE1s:                 3 out of     720    1%
+    Number used as OLOGICE1s:                    3
+    Number used as OSERDESE1s:                   0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             0 out of     144    0%
+  Number of BUFIODQSs:                           0 out of      72    0%
+  Number of BUFRs:                               0 out of      36    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     768    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              0 out of      12    0%
+  Number of IBUFDS_GTXE1s:                       0 out of      12    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of      18    0%
+  Number of IODELAYE1s:                          0 out of     720    0%
+  Number of MMCM_ADVs:                           0 out of      12    0%
+  Number of PCIE_2_0s:                           0 out of       2    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       0 out of       4    0%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 26 secs 
+Finished initial Timing Analysis.  REAL time: 26 secs 
+
+WARNING:Par:288 - The signal FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAMD_D1_O has no load. 
+   PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAMD_D1_O has no load. 
+   PAR will not attempt to route this signal.
+Starting Router
+
+
+Phase  1  : 121343 unrouted;      REAL time: 32 secs 
+
+Phase  2  : 100140 unrouted;      REAL time: 49 secs 
+
+Phase  3  : 36364 unrouted;      REAL time: 1 mins 50 secs 
+
+Phase  4  : 36391 unrouted; (Setup:0, Hold:381, Component Switching Limit:0)     REAL time: 2 mins 1 secs 
+
+Updating file: siggen.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:393, Component Switching Limit:0)     REAL time: 3 mins 22 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:393, Component Switching Limit:0)     REAL time: 3 mins 22 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:393, Component Switching Limit:0)     REAL time: 3 mins 22 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:393, Component Switching Limit:0)     REAL time: 3 mins 22 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 mins 23 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 mins 28 secs 
+Total REAL time to Router completion: 3 mins 28 secs 
+Total CPU time to Router completion: 3 mins 35 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP | BUFGCTRL_X0Y0| No   | 5682 |  0.271     |  1.582      |
++---------------------+--------------+------+------+------------+-------------+
+|   Mram__n06023_BUFG | BUFGCTRL_X0Y1| No   |   18 |  0.075     |  1.413      |
++---------------------+--------------+------+------+------------+-------------+
+|CW/CW/bin2cw/state[2 |              |      |      |            |             |
+|]_GND_90_o_Mux_100_o |              |      |      |            |             |
+|                     |         Local|      |    2 |  0.176     |  0.354      |
++---------------------+--------------+------+------+------------+-------------+
+|CW/CW/bin2cw/Mram_st |              |      |      |            |             |
+|ate[2]_GND_83_o_Mux_ |              |      |      |            |             |
+|                86_o |         Local|      |    4 |  0.404     |  0.793      |
++---------------------+--------------+------+------+------------+-------------+
+|CW/CW/bin2cw/Mmux_st |              |      |      |            |             |
+|ate[2]_next_state[1] |              |      |      |            |             |
+|         _Mux_22_o11 |         Local|      |    1 |  0.000     |  0.274      |
++---------------------+--------------+------+------+------------+-------------+
+|CW/CW/bin2cw/state[2 |              |      |      |            |             |
+|]_GND_96_o_Mux_112_o |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.404      |
++---------------------+--------------+------+------+------------+-------------+
+|CW/CW/bin2cw/Mram_st |              |      |      |            |             |
+|ate[2]_GND_102_o_Mux |              |      |      |            |             |
+|              _124_o |         Local|      |    1 |  0.000     |  0.257      |
++---------------------+--------------+------+------+------------+-------------+
+|CW/Mram_state[2]_GND |              |      |      |            |             |
+|      _62_o_Mux_12_o |         Local|      |    6 |  0.173     |  0.533      |
++---------------------+--------------+------+------+------------+-------------+
+|CW/CW/bin2cw/state[2 |              |      |      |            |             |
+|]_GND_97_o_Mux_114_o |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.269      |
++---------------------+--------------+------+------+------------+-------------+
+|CW/CW/bin2cw/Mram_st |              |      |      |            |             |
+|ate[2]_GND_79_o_Mux_ |              |      |      |            |             |
+|                21_o |         Local|      |    2 |  0.174     |  0.555      |
++---------------------+--------------+------+------+------------+-------------+
+|        Mram__n06021 |         Local|      |    1 |  0.000     |  0.683      |
++---------------------+--------------+------+------+------------+-------------+
+|         Mram__n0602 |         Local|      |    1 |  0.000     |  0.560      |
++---------------------+--------------+------+------+------------+-------------+
+|CW/CW/bin2cw/Mram_st |              |      |      |            |             |
+|ate[2]_GND_86_o_Mux_ |              |      |      |            |             |
+|                92_o |         Local|      |    1 |  0.000     |  0.165      |
++---------------------+--------------+------+------+------------+-------------+
+|CW/CW/bin2cw/Mram_st |              |      |      |            |             |
+|ate[2]_GND_99_o_Mux_ |              |      |      |            |             |
+|               118_o |         Local|      |    1 |  0.000     |  0.377      |
++---------------------+--------------+------+------+------------+-------------+
+|CW/CW/bin2cw/Mram_st |              |      |      |            |             |
+|ate[2]_GND_98_o_Mux_ |              |      |      |            |             |
+|               116_o |         Local|      |    1 |  0.000     |  0.263      |
++---------------------+--------------+------+------+------------+-------------+
+|CW/CW/bin2cw/state[2 |              |      |      |            |             |
+|]_GND_94_o_Mux_108_o |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.337      |
++---------------------+--------------+------+------+------------+-------------+
+|CW/CW/bin2cw/Mram_st |              |      |      |            |             |
+|ate[2]_GND_92_o_Mux_ |              |      |      |            |             |
+|               104_o |         Local|      |    1 |  0.000     |  0.247      |
++---------------------+--------------+------+------+------------+-------------+
+|CW/CW/bin2cw/Mram_st |              |      |      |            |             |
+|ate[2]_GND_82_o_Mux_ |              |      |      |            |             |
+|                84_o |         Local|      |    1 |  0.000     |  0.265      |
++---------------------+--------------+------+------+------------+-------------+
+|CW/Mram_state[2]_GND |              |      |      |            |             |
+|      _73_o_Mux_48_o |         Local|      |    1 |  0.000     |  0.397      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_clk = PERIOD TIMEGRP "clk" 220 MHz HIG | SETUP       |     0.016ns|     4.529ns|       0|           0
+  H 50%                                     | HOLD        |     0.047ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 3 mins 34 secs 
+Total CPU time to PAR completion: 3 mins 40 secs 
+
+Peak Memory Usage:  826 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 4
+Number of info messages: 0
+
+Writing design to file siggen.ncd
+
+
+
+PAR done!

@@ -1,0 +1,20 @@
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/prng_lcg.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/prng_lcg.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/prng_lcg.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/prng_lcg.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/prng_lcg.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/prng_lcg.syr" 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/prng_lcg.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/prng_lcg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6vlx240t-ff784-3 prng_lcg.ngc prng_lcg.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc prng_lcg.ucf -p xc6vlx240t-ff784-3 prng_lcg.ngc prng_lcg.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power high -o prng_lcg_map.ncd prng_lcg.ngd prng_lcg.pcf 
+par -w -intstyle ise -ol high -mt 2 prng_lcg_map.ncd prng_lcg.ncd prng_lcg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml prng_lcg.twx prng_lcg.ncd -o prng_lcg.twr prng_lcg.pcf -ucf prng_lcg.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/prng_lcg.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/prng_lcg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc prng_lcg.ucf -p xc6vlx240t-ff784-3 prng_lcg.ngc prng_lcg.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power high -o prng_lcg_map.ncd prng_lcg.ngd prng_lcg.pcf 
+par -w -intstyle ise -ol high -mt 2 prng_lcg_map.ncd prng_lcg.ncd prng_lcg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml prng_lcg.twx prng_lcg.ncd -o prng_lcg.twr prng_lcg.pcf -ucf prng_lcg.ucf 
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/prng_lcg.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/prng_lcg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc prng_lcg.ucf -p xc6vlx240t-ff784-3 prng_lcg.ngc prng_lcg.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc prng_lcg.ucf -p xc6vlx240t-ff784-3 prng_lcg.ngc prng_lcg.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power high -o prng_lcg_map.ncd prng_lcg.ngd prng_lcg.pcf 
+par -w -intstyle ise -ol high -mt 2 prng_lcg_map.ncd prng_lcg.ncd prng_lcg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml prng_lcg.twx prng_lcg.ncd -o prng_lcg.twr prng_lcg.pcf -ucf prng_lcg.ucf 

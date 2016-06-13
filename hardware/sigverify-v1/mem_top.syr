@@ -1,0 +1,362 @@
+Release 13.2 - xst O.61xd (lin)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: mem_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mem_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mem_top"
+Output Format                      : NGC
+Target Device                      : xc6vlx240t-3-ff784
+
+---- Source Options
+Top Module Name                    : mem_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/ipcore_dir/mem3.v\" into library work
+Parsing module <mem3>.
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/ipcore_dir/mem2.v\" into library work
+Parsing module <mem2>.
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/ipcore_dir/mem1.v\" into library work
+Parsing module <mem1>.
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/ipcore_dir/mem0.v\" into library work
+Parsing module <mem0>.
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/mem_top.v\" into library work
+Parsing module <mem_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <mem_top>.
+
+Elaborating module <mem0>.
+WARNING:HDLCompiler:1499 - "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/ipcore_dir/mem0.v" Line 39: Empty module <mem0> remains a black box.
+
+Elaborating module <mem1>.
+WARNING:HDLCompiler:1499 - "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/ipcore_dir/mem1.v" Line 39: Empty module <mem1> remains a black box.
+
+Elaborating module <mem2>.
+WARNING:HDLCompiler:1499 - "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/ipcore_dir/mem2.v" Line 39: Empty module <mem2> remains a black box.
+
+Elaborating module <mem3>.
+WARNING:HDLCompiler:1499 - "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/ipcore_dir/mem3.v" Line 39: Empty module <mem3> remains a black box.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mem_top>.
+    Related source file is "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/mem_top.v".
+        ADDR_W = 9
+        DAT_W = 2800
+    Summary:
+	no macro.
+Unit <mem_top> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/mem0.ngc>.
+Reading core <ipcore_dir/mem1.ngc>.
+Reading core <ipcore_dir/mem2.ngc>.
+Reading core <ipcore_dir/mem3.ngc>.
+Loading core <mem0> for timing and area information for instance <mem0>.
+Loading core <mem1> for timing and area information for instance <mem1>.
+Loading core <mem2> for timing and area information for instance <mem2>.
+Loading core <mem3> for timing and area information for instance <mem3>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <mem_top> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mem_top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : mem_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 8
+#      GND                         : 4
+#      VCC                         : 4
+# RAMS                             : 40
+#      RAMB36E1                    : 40
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 2809
+#      IBUF                        : 9
+#      OBUF                        : 2800
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx240tff784-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                        2810
+ Number of bonded IOBs:                2810  out of    400   702% (*) 
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               40  out of    416     9%  
+    Number using Block RAM only:         40
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 40    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                     | Buffer(FF name)                                                                                                             | Load  |
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
+mem0/N1(mem0/XST_GND:G)            | NONE(mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/SP.WIDE_PRIM36.ram)| 20    |
+mem1/N1(mem1/XST_GND:G)            | NONE(mem1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/SP.WIDE_PRIM36.ram)| 20    |
+mem2/N1(mem2/XST_GND:G)            | NONE(mem2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/SP.WIDE_PRIM36.ram)| 20    |
+mem3/N1(mem3/XST_GND:G)            | NONE(mem3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/SP.WIDE_PRIM36.ram)| 20    |
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 0.757ns
+   Maximum output required time after clock: 1.873ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 700 / 700
+-------------------------------------------------------------------------
+Offset:              0.757ns (Levels of Logic = 2)
+  Source:            addr<7> (PAD)
+  Destination:       mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/SP.WIDE_PRIM36.ram (RAM)
+  Destination Clock: clk rising
+
+  Data Path: addr<7> to mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/SP.WIDE_PRIM36.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            80   0.003   0.393  addr_7_IBUF (addr_7_IBUF)
+     begin scope: 'mem0:addra<7>'
+     RAMB36E1:ADDRARDADDR13        0.361          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/SP.WIDE_PRIM36.ram
+    ----------------------------------------
+    Total                      0.757ns (0.364ns logic, 0.393ns route)
+                                       (48.1% logic, 51.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1400 / 1400
+-------------------------------------------------------------------------
+Offset:              1.873ns (Levels of Logic = 2)
+  Source:            mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/SP.WIDE_PRIM36.ram (RAM)
+  Destination:       dout<2799> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: mem0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/SP.WIDE_PRIM36.ram to dout<2799>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB36E1:CLKARDCLK->DOBDO29    1   1.591   0.279  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/SP.WIDE_PRIM36.ram (douta<699>)
+     end scope: 'mem0:douta<699>'
+     OBUF:I->O                 0.003          dout_2799_OBUF (dout<2799>)
+    ----------------------------------------
+    Total                      1.873ns (1.594ns logic, 0.279ns route)
+                                       (85.1% logic, 14.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.52 secs
+ 
+--> 
+
+
+Total memory usage is 136352 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

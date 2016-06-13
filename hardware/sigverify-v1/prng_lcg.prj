@@ -1,0 +1,3 @@
+verilog work "ipcore_dir/MUL_DSP.v"
+verilog work "MUL_32bit.v"
+verilog work "prng_lcg.v"

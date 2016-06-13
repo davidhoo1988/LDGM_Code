@@ -1,0 +1,19 @@
+library verilog;
+use verilog.vl_types.all;
+entity vec_generator is
+    generic(
+        init            : integer := 0;
+        shift_10        : integer := 1;
+        shift_50        : integer := 2;
+        shift_1         : integer := 3
+    );
+    port(
+        clk             : in     vl_logic;
+        rst_b           : in     vl_logic;
+        start           : in     vl_logic;
+        mode            : in     vl_logic;
+        idx             : in     vl_logic_vector(13 downto 0);
+        finish          : out    vl_logic;
+        vector          : out    vl_logic_vector(0 to 9799)
+    );
+end vec_generator;

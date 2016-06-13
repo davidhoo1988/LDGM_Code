@@ -1,0 +1,1 @@
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6vlx240t-ff784-3 "fifo_8_to_1.ngc" fifo_8_to_1.ngd  

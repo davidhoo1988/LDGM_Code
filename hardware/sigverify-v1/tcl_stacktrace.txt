@@ -1,0 +1,15 @@
+Wed Mar 16 10:54:13 AM CST 2016
+Trace back: invalid command name "Wave::ViewDecl"
+    while executing
+"Wave::ViewDecl .main_pane.wave.interior.cs.body.pw.wf.tree"
+    invoked from within
+".main_pane.wave.interior.cs.body.pw.wf.wavenameareapopup_popup invoke active"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list $w invoke active]"
+    (procedure "tk::MenuInvoke" line 50)
+    invoked from within
+"tk::MenuInvoke .main_pane.wave.interior.cs.body.pw.wf.wavenameareapopup_popup 1"
+    (command bound to event)
+  2: ::tkerror {invalid command name "Wave::ViewDecl"}
+  1: ::bgerror {invalid command name "Wave::ViewDecl"}

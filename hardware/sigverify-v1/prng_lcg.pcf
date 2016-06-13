@@ -1,0 +1,85 @@
+//! **************************************************************************
+// Written by: Map O.61xd on Fri Mar 25 17:13:51 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+PIN multiplier/Msub_z11_pins<69> = BEL "multiplier/Msub_z11" PINNAME CLK;
+PIN multiplier/Madd_GND_2_o_z2_reg1[31]_add_20_OUT1_pins<117> = BEL
+        "multiplier/Madd_GND_2_o_z2_reg1[31]_add_20_OUT1" PINNAME CLK;
+PIN multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1_pins<117> = BEL
+        "multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1" PINNAME CLK;
+PIN "multiplier/Madd_n0045[32:0]1_pins<117>" = BEL
+        "multiplier/Madd_n0045[32:0]1" PINNAME CLK;
+PIN multiplier/Madd_multiplicand[31]_multiplicand[15]_add_3_OUT1_pins<117> =
+        BEL "multiplier/Madd_multiplicand[31]_multiplicand[15]_add_3_OUT1"
+        PINNAME CLK;
+PIN multiplier/my_MUL_IPCore2/blk00000003_pins<64> = BEL
+        "multiplier/my_MUL_IPCore2/blk00000003" PINNAME CLK;
+PIN multiplier/my_MUL_IPCore1/blk00000003_pins<64> = BEL
+        "multiplier/my_MUL_IPCore1/blk00000003" PINNAME CLK;
+PIN multiplier/my_MUL_IPCore0/blk00000003_pins<64> = BEL
+        "multiplier/my_MUL_IPCore0/blk00000003" PINNAME CLK;
+TIMEGRP clk = BEL "prng_typ_reg_0" BEL "prng_typ_reg_1" BEL "prng_t_reg_0" BEL
+        "prng_t_reg_1" BEL "prng_t_reg_2" BEL "prng_t_reg_3" BEL
+        "prng_t_reg_4" BEL "prng_t_reg_5" BEL "prng_t_reg_6" BEL
+        "prng_t_reg_7" BEL "prng_t_reg_8" BEL "prng_t_reg_9" BEL
+        "prng_t_reg_10" BEL "prng_t_reg_11" BEL "prng_t_reg_12" BEL
+        "prng_t_reg_13" BEL "prng_t_reg_14" BEL "prng_t_reg_15" BEL
+        "prng_t_reg_16" BEL "prng_t_reg_17" BEL "prng_t_reg_18" BEL
+        "prng_t_reg_19" BEL "prng_t_reg_20" BEL "prng_t_reg_21" BEL
+        "prng_t_reg_22" BEL "prng_t_reg_23" BEL "prng_t_reg_24" BEL
+        "prng_t_reg_25" BEL "prng_t_reg_26" BEL "prng_t_reg_27" BEL
+        "prng_t_reg_28" BEL "prng_t_reg_29" BEL "prng_t_reg_30" BEL
+        "prng_t_reg_31" BEL "prng_r_dat_0" BEL "prng_r_dat_1" BEL
+        "prng_r_dat_2" BEL "prng_r_dat_3" BEL "prng_r_dat_4" BEL
+        "prng_r_dat_5" BEL "prng_r_dat_6" BEL "prng_r_dat_7" BEL
+        "prng_r_dat_8" BEL "prng_r_dat_9" BEL "prng_r_dat_10" BEL
+        "prng_r_dat_11" BEL "prng_r_dat_12" BEL "prng_r_dat_13" BEL
+        "prng_r_dat_14" BEL "prng_seed_reg_0" BEL "prng_seed_reg_1" BEL
+        "prng_seed_reg_2" BEL "prng_seed_reg_3" BEL "prng_seed_reg_4" BEL
+        "prng_seed_reg_5" BEL "prng_seed_reg_6" BEL "prng_seed_reg_7" BEL
+        "prng_seed_reg_8" BEL "prng_seed_reg_9" BEL "prng_seed_reg_10" BEL
+        "prng_seed_reg_11" BEL "prng_seed_reg_12" BEL "prng_seed_reg_13" BEL
+        "prng_seed_reg_14" BEL "prng_seed_reg_15" BEL "prng_seed_reg_16" BEL
+        "prng_seed_reg_17" BEL "prng_seed_reg_18" BEL "prng_seed_reg_19" BEL
+        "prng_seed_reg_20" BEL "prng_seed_reg_21" BEL "prng_seed_reg_22" BEL
+        "prng_seed_reg_23" BEL "prng_seed_reg_24" BEL "prng_seed_reg_25" BEL
+        "prng_seed_reg_26" BEL "prng_seed_reg_27" BEL "prng_seed_reg_28" BEL
+        "prng_seed_reg_29" BEL "prng_seed_reg_30" BEL "prng_seed_reg_31" BEL
+        "cnt_0" BEL "cnt_1" BEL "cnt_2" BEL "CurrentState_FSM_FFd2" BEL
+        "CurrentState_FSM_FFd1" PIN "multiplier/Msub_z11_pins<69>" PIN
+        "multiplier/Madd_GND_2_o_z2_reg1[31]_add_20_OUT1_pins<117>" PIN
+        "multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1_pins<117>" PIN
+        "multiplier/Madd_n0045[32:0]1_pins<117>" PIN
+        "multiplier/Madd_multiplicand[31]_multiplicand[15]_add_3_OUT1_pins<117>"
+        BEL "multiplier/z0_reg0_31" BEL "multiplier/z0_reg0_30" BEL
+        "multiplier/z0_reg0_29" BEL "multiplier/z0_reg0_28" BEL
+        "multiplier/z0_reg0_27" BEL "multiplier/z0_reg0_26" BEL
+        "multiplier/z0_reg0_25" BEL "multiplier/z0_reg0_24" BEL
+        "multiplier/z0_reg0_23" BEL "multiplier/z0_reg0_22" BEL
+        "multiplier/z0_reg0_21" BEL "multiplier/z0_reg0_20" BEL
+        "multiplier/z0_reg0_19" BEL "multiplier/z0_reg0_18" BEL
+        "multiplier/z0_reg0_17" BEL "multiplier/z0_reg0_16" BEL
+        "clk_BUFGP/BUFG" BEL "multiplier/Mshreg_result_15" BEL
+        "multiplier/result_15" BEL "multiplier/Mshreg_result_14" BEL
+        "multiplier/result_14" BEL "multiplier/Mshreg_result_13" BEL
+        "multiplier/result_13" BEL "multiplier/Mshreg_result_12" BEL
+        "multiplier/result_12" BEL "multiplier/Mshreg_result_11" BEL
+        "multiplier/result_11" BEL "multiplier/Mshreg_result_10" BEL
+        "multiplier/result_10" BEL "multiplier/Mshreg_result_9" BEL
+        "multiplier/result_9" BEL "multiplier/Mshreg_result_8" BEL
+        "multiplier/result_8" BEL "multiplier/Mshreg_result_7" BEL
+        "multiplier/result_7" BEL "multiplier/Mshreg_result_6" BEL
+        "multiplier/result_6" BEL "multiplier/Mshreg_result_5" BEL
+        "multiplier/result_5" BEL "multiplier/Mshreg_result_4" BEL
+        "multiplier/result_4" BEL "multiplier/Mshreg_result_3" BEL
+        "multiplier/result_3" BEL "multiplier/Mshreg_result_2" BEL
+        "multiplier/result_2" BEL "multiplier/Mshreg_result_1" BEL
+        "multiplier/result_1" BEL "multiplier/Mshreg_result_0" BEL
+        "multiplier/result_0" PIN
+        "multiplier/my_MUL_IPCore2/blk00000003_pins<64>" PIN
+        "multiplier/my_MUL_IPCore1/blk00000003_pins<64>" PIN
+        "multiplier/my_MUL_IPCore0/blk00000003_pins<64>";
+TS_clk = PERIOD TIMEGRP "clk" 250 MHz HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2
+# SW Build 932637 on Wed Jun 11 13:08:21 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Apr  4 15:00:37 2016
+# Process ID: 21790
+# Log file: /home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.runs/A_synth_1/A.vds
+# Journal file: /home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.runs/A_synth_1/vivado.jou
+#-----------------------------------------------------------
+source A.tcl

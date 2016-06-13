@@ -1,0 +1,520 @@
+--------------------------------------------------------------------------------
+Release 13.2 Trace  (lin)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+/home/david/Xilinx/ISE13.2/ISE_DS/ISE/bin/lin/unwrapped/trce -intstyle ise -v 3
+-s 3 -n 3 -fastpaths -xml prng_lcg.twx prng_lcg.ncd -o prng_lcg.twr
+prng_lcg.pcf -ucf prng_lcg.ucf
+
+Design file:              prng_lcg.ncd
+Physical constraint file: prng_lcg.pcf
+Device,package,speed:     xc6vlx240t,ff784,C,-3 (PRODUCTION 1.15 2011-06-20, STEPPING level 0)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_clk = PERIOD TIMEGRP "clk" 250 MHz HIGH 50%;
+
+ 52665 paths analyzed, 469 endpoints analyzed, 4 failing endpoints
+ 4 timing errors detected. (4 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.075ns.
+--------------------------------------------------------------------------------
+
+Paths for end point multiplier/Madd_n0045[32:0]1 (DSP48_X1Y54.A12), 1585 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.075ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               multiplier/my_MUL_IPCore2/blk00000003 (DSP)
+  Destination:          multiplier/Madd_n0045[32:0]1 (DSP)
+  Requirement:          4.000ns
+  Data Path Delay:      4.011ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.029ns (0.120 - 0.149)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 4.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: multiplier/my_MUL_IPCore2/blk00000003 to multiplier/Madd_n0045[32:0]1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    DSP48_X1Y50.P0       Tdspcko_P_PREG        0.378   multiplier/my_MUL_IPCore2/blk00000003
+                                                       multiplier/my_MUL_IPCore2/blk00000003
+    DSP48_X1Y51.C0       net (fanout=1)        0.181   multiplier/z1_tmp<0>
+    DSP48_X1Y51.PCOUT9   Tdspdo_C_PCOUT        1.441   multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1
+                                                       multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1
+    DSP48_X1Y52.PCIN9    net (fanout=1)        0.002   multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1_PCOUT_to_Msub_z11_PCIN_9
+    DSP48_X1Y52.P30      Tdspdo_PCIN_P         1.188   multiplier/Msub_z11
+                                                       multiplier/Msub_z11
+    DSP48_X1Y54.A12      net (fanout=1)        0.602   multiplier/z1<30>
+    DSP48_X1Y54.CLK      Tdspdck_A_AREG        0.219   multiplier/Madd_n0045[32:0]1
+                                                       multiplier/Madd_n0045[32:0]1
+    -------------------------------------------------  ---------------------------
+    Total                                      4.011ns (3.226ns logic, 0.785ns route)
+                                                       (80.4% logic, 19.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.075ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               multiplier/my_MUL_IPCore2/blk00000003 (DSP)
+  Destination:          multiplier/Madd_n0045[32:0]1 (DSP)
+  Requirement:          4.000ns
+  Data Path Delay:      4.011ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.029ns (0.120 - 0.149)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 4.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: multiplier/my_MUL_IPCore2/blk00000003 to multiplier/Madd_n0045[32:0]1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    DSP48_X1Y50.P9       Tdspcko_P_PREG        0.378   multiplier/my_MUL_IPCore2/blk00000003
+                                                       multiplier/my_MUL_IPCore2/blk00000003
+    DSP48_X1Y51.C9       net (fanout=1)        0.181   multiplier/z1_tmp<9>
+    DSP48_X1Y51.PCOUT9   Tdspdo_C_PCOUT        1.441   multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1
+                                                       multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1
+    DSP48_X1Y52.PCIN9    net (fanout=1)        0.002   multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1_PCOUT_to_Msub_z11_PCIN_9
+    DSP48_X1Y52.P30      Tdspdo_PCIN_P         1.188   multiplier/Msub_z11
+                                                       multiplier/Msub_z11
+    DSP48_X1Y54.A12      net (fanout=1)        0.602   multiplier/z1<30>
+    DSP48_X1Y54.CLK      Tdspdck_A_AREG        0.219   multiplier/Madd_n0045[32:0]1
+                                                       multiplier/Madd_n0045[32:0]1
+    -------------------------------------------------  ---------------------------
+    Total                                      4.011ns (3.226ns logic, 0.785ns route)
+                                                       (80.4% logic, 19.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.075ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               multiplier/my_MUL_IPCore2/blk00000003 (DSP)
+  Destination:          multiplier/Madd_n0045[32:0]1 (DSP)
+  Requirement:          4.000ns
+  Data Path Delay:      4.011ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.029ns (0.120 - 0.149)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 4.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: multiplier/my_MUL_IPCore2/blk00000003 to multiplier/Madd_n0045[32:0]1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    DSP48_X1Y50.P1       Tdspcko_P_PREG        0.378   multiplier/my_MUL_IPCore2/blk00000003
+                                                       multiplier/my_MUL_IPCore2/blk00000003
+    DSP48_X1Y51.C1       net (fanout=1)        0.181   multiplier/z1_tmp<1>
+    DSP48_X1Y51.PCOUT9   Tdspdo_C_PCOUT        1.441   multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1
+                                                       multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1
+    DSP48_X1Y52.PCIN9    net (fanout=1)        0.002   multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1_PCOUT_to_Msub_z11_PCIN_9
+    DSP48_X1Y52.P30      Tdspdo_PCIN_P         1.188   multiplier/Msub_z11
+                                                       multiplier/Msub_z11
+    DSP48_X1Y54.A12      net (fanout=1)        0.602   multiplier/z1<30>
+    DSP48_X1Y54.CLK      Tdspdck_A_AREG        0.219   multiplier/Madd_n0045[32:0]1
+                                                       multiplier/Madd_n0045[32:0]1
+    -------------------------------------------------  ---------------------------
+    Total                                      4.011ns (3.226ns logic, 0.785ns route)
+                                                       (80.4% logic, 19.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point multiplier/Madd_n0045[32:0]1 (DSP48_X1Y54.B11), 1585 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.059ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               multiplier/my_MUL_IPCore2/blk00000003 (DSP)
+  Destination:          multiplier/Madd_n0045[32:0]1 (DSP)
+  Requirement:          4.000ns
+  Data Path Delay:      3.995ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.029ns (0.120 - 0.149)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 4.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: multiplier/my_MUL_IPCore2/blk00000003 to multiplier/Madd_n0045[32:0]1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    DSP48_X1Y50.P0       Tdspcko_P_PREG        0.378   multiplier/my_MUL_IPCore2/blk00000003
+                                                       multiplier/my_MUL_IPCore2/blk00000003
+    DSP48_X1Y51.C0       net (fanout=1)        0.181   multiplier/z1_tmp<0>
+    DSP48_X1Y51.PCOUT9   Tdspdo_C_PCOUT        1.441   multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1
+                                                       multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1
+    DSP48_X1Y52.PCIN9    net (fanout=1)        0.002   multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1_PCOUT_to_Msub_z11_PCIN_9
+    DSP48_X1Y52.P11      Tdspdo_PCIN_P         1.188   multiplier/Msub_z11
+                                                       multiplier/Msub_z11
+    DSP48_X1Y54.B11      net (fanout=1)        0.556   multiplier/z1<11>
+    DSP48_X1Y54.CLK      Tdspdck_B_BREG        0.249   multiplier/Madd_n0045[32:0]1
+                                                       multiplier/Madd_n0045[32:0]1
+    -------------------------------------------------  ---------------------------
+    Total                                      3.995ns (3.256ns logic, 0.739ns route)
+                                                       (81.5% logic, 18.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.059ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               multiplier/my_MUL_IPCore2/blk00000003 (DSP)
+  Destination:          multiplier/Madd_n0045[32:0]1 (DSP)
+  Requirement:          4.000ns
+  Data Path Delay:      3.995ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.029ns (0.120 - 0.149)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 4.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: multiplier/my_MUL_IPCore2/blk00000003 to multiplier/Madd_n0045[32:0]1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    DSP48_X1Y50.P9       Tdspcko_P_PREG        0.378   multiplier/my_MUL_IPCore2/blk00000003
+                                                       multiplier/my_MUL_IPCore2/blk00000003
+    DSP48_X1Y51.C9       net (fanout=1)        0.181   multiplier/z1_tmp<9>
+    DSP48_X1Y51.PCOUT9   Tdspdo_C_PCOUT        1.441   multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1
+                                                       multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1
+    DSP48_X1Y52.PCIN9    net (fanout=1)        0.002   multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1_PCOUT_to_Msub_z11_PCIN_9
+    DSP48_X1Y52.P11      Tdspdo_PCIN_P         1.188   multiplier/Msub_z11
+                                                       multiplier/Msub_z11
+    DSP48_X1Y54.B11      net (fanout=1)        0.556   multiplier/z1<11>
+    DSP48_X1Y54.CLK      Tdspdck_B_BREG        0.249   multiplier/Madd_n0045[32:0]1
+                                                       multiplier/Madd_n0045[32:0]1
+    -------------------------------------------------  ---------------------------
+    Total                                      3.995ns (3.256ns logic, 0.739ns route)
+                                                       (81.5% logic, 18.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.059ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               multiplier/my_MUL_IPCore2/blk00000003 (DSP)
+  Destination:          multiplier/Madd_n0045[32:0]1 (DSP)
+  Requirement:          4.000ns
+  Data Path Delay:      3.995ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.029ns (0.120 - 0.149)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 4.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: multiplier/my_MUL_IPCore2/blk00000003 to multiplier/Madd_n0045[32:0]1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    DSP48_X1Y50.P1       Tdspcko_P_PREG        0.378   multiplier/my_MUL_IPCore2/blk00000003
+                                                       multiplier/my_MUL_IPCore2/blk00000003
+    DSP48_X1Y51.C1       net (fanout=1)        0.181   multiplier/z1_tmp<1>
+    DSP48_X1Y51.PCOUT9   Tdspdo_C_PCOUT        1.441   multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1
+                                                       multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1
+    DSP48_X1Y52.PCIN9    net (fanout=1)        0.002   multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1_PCOUT_to_Msub_z11_PCIN_9
+    DSP48_X1Y52.P11      Tdspdo_PCIN_P         1.188   multiplier/Msub_z11
+                                                       multiplier/Msub_z11
+    DSP48_X1Y54.B11      net (fanout=1)        0.556   multiplier/z1<11>
+    DSP48_X1Y54.CLK      Tdspdck_B_BREG        0.249   multiplier/Madd_n0045[32:0]1
+                                                       multiplier/Madd_n0045[32:0]1
+    -------------------------------------------------  ---------------------------
+    Total                                      3.995ns (3.256ns logic, 0.739ns route)
+                                                       (81.5% logic, 18.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point multiplier/Madd_n0045[32:0]1 (DSP48_X1Y54.B4), 1585 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.024ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               multiplier/my_MUL_IPCore2/blk00000003 (DSP)
+  Destination:          multiplier/Madd_n0045[32:0]1 (DSP)
+  Requirement:          4.000ns
+  Data Path Delay:      3.960ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.029ns (0.120 - 0.149)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 4.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: multiplier/my_MUL_IPCore2/blk00000003 to multiplier/Madd_n0045[32:0]1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    DSP48_X1Y50.P0       Tdspcko_P_PREG        0.378   multiplier/my_MUL_IPCore2/blk00000003
+                                                       multiplier/my_MUL_IPCore2/blk00000003
+    DSP48_X1Y51.C0       net (fanout=1)        0.181   multiplier/z1_tmp<0>
+    DSP48_X1Y51.PCOUT9   Tdspdo_C_PCOUT        1.441   multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1
+                                                       multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1
+    DSP48_X1Y52.PCIN9    net (fanout=1)        0.002   multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1_PCOUT_to_Msub_z11_PCIN_9
+    DSP48_X1Y52.P4       Tdspdo_PCIN_P         1.188   multiplier/Msub_z11
+                                                       multiplier/Msub_z11
+    DSP48_X1Y54.B4       net (fanout=1)        0.521   multiplier/z1<4>
+    DSP48_X1Y54.CLK      Tdspdck_B_BREG        0.249   multiplier/Madd_n0045[32:0]1
+                                                       multiplier/Madd_n0045[32:0]1
+    -------------------------------------------------  ---------------------------
+    Total                                      3.960ns (3.256ns logic, 0.704ns route)
+                                                       (82.2% logic, 17.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.024ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               multiplier/my_MUL_IPCore2/blk00000003 (DSP)
+  Destination:          multiplier/Madd_n0045[32:0]1 (DSP)
+  Requirement:          4.000ns
+  Data Path Delay:      3.960ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.029ns (0.120 - 0.149)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 4.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: multiplier/my_MUL_IPCore2/blk00000003 to multiplier/Madd_n0045[32:0]1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    DSP48_X1Y50.P9       Tdspcko_P_PREG        0.378   multiplier/my_MUL_IPCore2/blk00000003
+                                                       multiplier/my_MUL_IPCore2/blk00000003
+    DSP48_X1Y51.C9       net (fanout=1)        0.181   multiplier/z1_tmp<9>
+    DSP48_X1Y51.PCOUT9   Tdspdo_C_PCOUT        1.441   multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1
+                                                       multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1
+    DSP48_X1Y52.PCIN9    net (fanout=1)        0.002   multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1_PCOUT_to_Msub_z11_PCIN_9
+    DSP48_X1Y52.P4       Tdspdo_PCIN_P         1.188   multiplier/Msub_z11
+                                                       multiplier/Msub_z11
+    DSP48_X1Y54.B4       net (fanout=1)        0.521   multiplier/z1<4>
+    DSP48_X1Y54.CLK      Tdspdck_B_BREG        0.249   multiplier/Madd_n0045[32:0]1
+                                                       multiplier/Madd_n0045[32:0]1
+    -------------------------------------------------  ---------------------------
+    Total                                      3.960ns (3.256ns logic, 0.704ns route)
+                                                       (82.2% logic, 17.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.024ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               multiplier/my_MUL_IPCore2/blk00000003 (DSP)
+  Destination:          multiplier/Madd_n0045[32:0]1 (DSP)
+  Requirement:          4.000ns
+  Data Path Delay:      3.960ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.029ns (0.120 - 0.149)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 4.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: multiplier/my_MUL_IPCore2/blk00000003 to multiplier/Madd_n0045[32:0]1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    DSP48_X1Y50.P1       Tdspcko_P_PREG        0.378   multiplier/my_MUL_IPCore2/blk00000003
+                                                       multiplier/my_MUL_IPCore2/blk00000003
+    DSP48_X1Y51.C1       net (fanout=1)        0.181   multiplier/z1_tmp<1>
+    DSP48_X1Y51.PCOUT9   Tdspdo_C_PCOUT        1.441   multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1
+                                                       multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1
+    DSP48_X1Y52.PCIN9    net (fanout=1)        0.002   multiplier/Msub_z1_tmp[31]_z0_reg0[31]_sub_1_OUT1_PCOUT_to_Msub_z11_PCIN_9
+    DSP48_X1Y52.P4       Tdspdo_PCIN_P         1.188   multiplier/Msub_z11
+                                                       multiplier/Msub_z11
+    DSP48_X1Y54.B4       net (fanout=1)        0.521   multiplier/z1<4>
+    DSP48_X1Y54.CLK      Tdspdck_B_BREG        0.249   multiplier/Madd_n0045[32:0]1
+                                                       multiplier/Madd_n0045[32:0]1
+    -------------------------------------------------  ---------------------------
+    Total                                      3.960ns (3.256ns logic, 0.704ns route)
+                                                       (82.2% logic, 17.8% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clk = PERIOD TIMEGRP "clk" 250 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point multiplier/Madd_n0045[32:0]1 (DSP48_X1Y54.C3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.019ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               multiplier/z0_reg0_19 (FF)
+  Destination:          multiplier/Madd_n0045[32:0]1 (DSP)
+  Requirement:          0.000ns
+  Data Path Delay:      0.101ns (Levels of Logic = 0)
+  Clock Path Skew:      0.082ns (0.527 - 0.445)
+  Source Clock:         clk_BUFGP rising at 4.000ns
+  Destination Clock:    clk_BUFGP rising at 4.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: multiplier/z0_reg0_19 to multiplier/Madd_n0045[32:0]1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y134.DQ     Tcko                  0.098   multiplier/z0_reg0<19>
+                                                       multiplier/z0_reg0_19
+    DSP48_X1Y54.C3       net (fanout=1)        0.121   multiplier/z0_reg0<19>
+    DSP48_X1Y54.CLK      Tdspckd_C_CREG(-Th)     0.118   multiplier/Madd_n0045[32:0]1
+                                                       multiplier/Madd_n0045[32:0]1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.101ns (-0.020ns logic, 0.121ns route)
+                                                       (-19.8% logic, 119.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point multiplier/Madd_n0045[32:0]1 (DSP48_X1Y54.C1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.022ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               multiplier/z0_reg0_17 (FF)
+  Destination:          multiplier/Madd_n0045[32:0]1 (DSP)
+  Requirement:          0.000ns
+  Data Path Delay:      0.104ns (Levels of Logic = 0)
+  Clock Path Skew:      0.082ns (0.527 - 0.445)
+  Source Clock:         clk_BUFGP rising at 4.000ns
+  Destination Clock:    clk_BUFGP rising at 4.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: multiplier/z0_reg0_17 to multiplier/Madd_n0045[32:0]1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y134.BQ     Tcko                  0.098   multiplier/z0_reg0<19>
+                                                       multiplier/z0_reg0_17
+    DSP48_X1Y54.C1       net (fanout=1)        0.124   multiplier/z0_reg0<17>
+    DSP48_X1Y54.CLK      Tdspckd_C_CREG(-Th)     0.118   multiplier/Madd_n0045[32:0]1
+                                                       multiplier/Madd_n0045[32:0]1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.104ns (-0.020ns logic, 0.124ns route)
+                                                       (-19.2% logic, 119.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point multiplier/Madd_n0045[32:0]1 (DSP48_X1Y54.C0), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.065ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               multiplier/z0_reg0_16 (FF)
+  Destination:          multiplier/Madd_n0045[32:0]1 (DSP)
+  Requirement:          0.000ns
+  Data Path Delay:      0.147ns (Levels of Logic = 0)
+  Clock Path Skew:      0.082ns (0.527 - 0.445)
+  Source Clock:         clk_BUFGP rising at 4.000ns
+  Destination Clock:    clk_BUFGP rising at 4.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: multiplier/z0_reg0_16 to multiplier/Madd_n0045[32:0]1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y134.AQ     Tcko                  0.098   multiplier/z0_reg0<19>
+                                                       multiplier/z0_reg0_16
+    DSP48_X1Y54.C0       net (fanout=1)        0.167   multiplier/z0_reg0<16>
+    DSP48_X1Y54.CLK      Tdspckd_C_CREG(-Th)     0.118   multiplier/Madd_n0045[32:0]1
+                                                       multiplier/Madd_n0045[32:0]1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.147ns (-0.020ns logic, 0.167ns route)
+                                                       (-13.6% logic, 113.6% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk = PERIOD TIMEGRP "clk" 250 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 2.434ns (period - min period limit)
+  Period: 4.000ns
+  Min period limit: 1.566ns (638.570MHz) (Tdspper_AREG_PREG)
+  Physical resource: multiplier/Madd_GND_2_o_z2_reg1[31]_add_20_OUT1/CLK
+  Logical resource: multiplier/Madd_GND_2_o_z2_reg1[31]_add_20_OUT1/CLK
+  Location pin: DSP48_X1Y53.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 2.434ns (period - min period limit)
+  Period: 4.000ns
+  Min period limit: 1.566ns (638.570MHz) (Tdspper_PREG)
+  Physical resource: multiplier/my_MUL_IPCore0/blk00000003/CLK
+  Logical resource: multiplier/my_MUL_IPCore0/blk00000003/CLK
+  Location pin: DSP48_X0Y52.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 2.434ns (period - min period limit)
+  Period: 4.000ns
+  Min period limit: 1.566ns (638.570MHz) (Tdspper_PREG)
+  Physical resource: multiplier/my_MUL_IPCore2/blk00000003/CLK
+  Logical resource: multiplier/my_MUL_IPCore2/blk00000003/CLK
+  Location pin: DSP48_X1Y50.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+1 constraint not met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.075|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 4  Score: 178  (Setup/Max: 178, Hold: 0)
+
+Constraints cover 52665 paths, 0 nets, and 556 connections
+
+Design statistics:
+   Minimum period:   4.075ns{1}   (Maximum frequency: 245.399MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Fri Mar 25 17:14:39 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 461 MB
+
+
+

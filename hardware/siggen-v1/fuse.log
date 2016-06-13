@@ -1,0 +1,32 @@
+Running: /home/david/Xilinx/ISE13.2/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen_tb_isim_beh.exe -prj /home/david/Dropbox/LDGC_Code/hardware/siggen-v1/siggen_tb_beh.prj work.siggen_tb work.glbl 
+ISim O.61xd (signature 0x84a0141b)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/div/div.v\" into library work
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/src/best_d.v\" into library work
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/src/encoder_main.v\" into library work
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/src/CWEncode.v\" into library work
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/mul_13bits/mul_32bit.v\" into library work
+WARNING:HDLCompiler:687 - "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/mul_13bits/mul_32bit.v" Line 7878: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/bram_B/B2/B2.v\" into library work
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/bram_B/B1/B1.v\" into library work
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/bram_B/B0/B0.v\" into library work
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/bram_A/A2/A2.v\" into library work
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/bram_A/A1/A1.v\" into library work
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/bram_A/A0/A0.v\" into library work
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/src/syngen.v\" into library work
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/src/qc_shifter.v\" into library work
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/src/prng_lcg.v\" into library work
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/src/matrix_B.v\" into library work
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/src/matrix_A.v\" into library work
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/fifo_13_to_13/fifo_13_to_13.v\" into library work
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/src/siggen.v\" into library work
+Analyzing Verilog file \"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/src/siggen_tb.v\" into library work
+Analyzing Verilog file \"/home/david/Xilinx/ISE13.2/ISE_DS/ISE//verilog/src/glbl.v\" into library work
+WARNING:HDLCompiler:687 - "/home/david/Xilinx/ISE13.2/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
+Starting static elaboration
+ERROR:HDLCompiler:1654 - "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/src/CWEncode.v" Line 40: Instantiating <fifo> from unknown module <fifo_8_to_1>
+ERROR:HDLCompiler:1654 - "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/src/best_d.v" Line 98: Instantiating <multiplier> from unknown module <mul_13bits>
+ERROR:HDLCompiler:1654 - "/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/src/syngen.v" Line 280: Instantiating <b> from unknown module <b>
+ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed

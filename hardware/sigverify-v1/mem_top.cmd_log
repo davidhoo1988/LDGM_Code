@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/mem_top.xst" -ofn "/home/david/Dropbox/LDGC_Code/hardware/sigverify-v1/mem_top.syr" 

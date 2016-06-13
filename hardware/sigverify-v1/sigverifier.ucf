@@ -1,0 +1,3 @@
+
+#Created by Constraints Editor (xc6vlx240t-ff784-3) - 2016/03/14
+NET "clk" TNM_NET = clk;

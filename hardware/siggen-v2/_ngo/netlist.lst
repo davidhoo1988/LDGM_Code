@@ -1,0 +1,11 @@
+/home/david/Dropbox/LDGC_Code/hardware/siggen-v2/siggen.ngc 1460555720
+ipcore_dir/mul_13bits/mul_13bits.ngc 1458197045
+ipcore_dir/fifo_8_to_1/fifo_8_to_1.ngc 1458202815
+ipcore_dir/bram_B/B/B.ngc 1460538736
+ipcore_dir/mul_13bits/mul_32bit.ngc 1459069013
+ipcore_dir/bram_B/B_aux/B_aux.ngc 1459490630
+ipcore_dir/fifo_13_to_13/fifo_13_to_13.ngc 1459221769
+ipcore_dir/bram_A/A/A.ngc 1459414101
+ipcore_dir/bram_A/A_aux/A_aux.ngc 1459491063
+ipcore_dir/div/div.ngc 1459075490
+OK

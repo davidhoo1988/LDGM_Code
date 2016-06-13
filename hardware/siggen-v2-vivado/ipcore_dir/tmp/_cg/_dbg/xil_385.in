@@ -1,0 +1,35 @@
+SET_FLAG DEBUG FALSE
+SET_FLAG MODE INTERACTIVE
+SET_FLAG STANDALONE_MODE FALSE
+SET_PREFERENCE devicefamily virtex6
+SET_PREFERENCE device xc6vlx240t
+SET_PREFERENCE speedgrade -3
+SET_PREFERENCE package ff784
+SET_PREFERENCE verilogsim true
+SET_PREFERENCE vhdlsim false
+SET_PREFERENCE simulationfiles Behavioral
+SET_PREFERENCE busformat BusFormatAngleBracketNotRipped
+SET_PREFERENCE outputdirectory /home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/
+SET_PREFERENCE workingdirectory /home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/tmp/
+SET_PREFERENCE subworkingdirectory /home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/tmp/_cg/
+SET_PREFERENCE transientdirectory /home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/tmp/_cg/_dbg/
+SET_PREFERENCE designentry Verilog
+SET_PREFERENCE flowvendor Other
+SET_PREFERENCE addpads false
+SET_PREFERENCE projectname coregen
+SET_PREFERENCE formalverification false
+SET_PREFERENCE asysymbol false
+SET_PREFERENCE implementationfiletype Ngc
+SET_PREFERENCE foundationsym false
+SET_PREFERENCE createndf false
+SET_PREFERENCE removerpms false
+SET_PARAMETER Component_Name hj
+SET_CORE_NAME Block Memory Generator
+SET_CORE_VERSION 6.2
+SET_CORE_VLNV xilinx.com:ip:blk_mem_gen:6.2
+SET_CORE_CLASS com.xilinx.ip.blk_mem_gen_v6_2.blk_mem_gen_v6_2
+SET_CORE_PATH /home/david/Xilinx/ISE13.2/ISE_DS/ISE/coregen/ip/xilinx/primary/com/xilinx/ip/blk_mem_gen_v6_2
+SET_CORE_GUIPATH /home/david/Xilinx/ISE13.2/ISE_DS/ISE/coregen/ip/xilinx/primary/com/xilinx/ip/blk_mem_gen_v6_2/gui/blk_mem_gen_v6_2.tcl
+SET_CORE_DATASHEET /home/david/Xilinx/ISE13.2/ISE_DS/ISE/coregen/ip/xilinx/primary/com/xilinx/ip/blk_mem_gen_v6_2/doc/blk_mem_gen_ds512.pdf
+ADD_CORE_DOCUMENT </home/david/Xilinx/ISE13.2/ISE_DS/ISE/coregen/ip/xilinx/primary/com/xilinx/ip/blk_mem_gen_v6_2/doc/blk_mem_gen_ds512.pdf><blk_mem_gen_ds512.pdf>
+ADD_CORE_DOCUMENT </home/david/Xilinx/ISE13.2/ISE_DS/ISE/coregen/ip/xilinx/primary/com/xilinx/ip/blk_mem_gen_v6_2/doc/blk_mem_gen_v6_2_vinfo.html><blk_mem_gen_v6_2_vinfo.html>

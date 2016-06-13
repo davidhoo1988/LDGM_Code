@@ -1,0 +1,6 @@
+verilog work "ipcore_dir/mem2.v"
+verilog work "ipcore_dir/mem1.v"
+verilog work "ipcore_dir/mem0.v"
+verilog work "qc_shifter.v"
+verilog work "mem_top.v"
+verilog work "sigverifier.v"

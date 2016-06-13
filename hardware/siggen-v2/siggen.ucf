@@ -1,0 +1,4 @@
+#Created by Constraints Editor (xc6vlx240t-ff784-3) - 2016/04/03
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 150 MHz HIGH 50%;
+INST "CW/b/U0/*" S = "TRUE";

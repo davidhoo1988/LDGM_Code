@@ -1,0 +1,415 @@
+#-----------------------------------------------------------
+# Vivado v2014.2
+# SW Build 932637 on Wed Jun 11 13:08:21 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Apr  4 15:22:55 2016
+# Process ID: 12622
+# Log file: /home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.runs/div_synth_1/div.vds
+# Journal file: /home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.runs/div_synth_1/vivado.jou
+#-----------------------------------------------------------
+source div.tcl
+# set_param gui.test TreeTableDev
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7vx485tffg1157-1
+# set_property target_language Verilog [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property default_lib xil_defaultlib [current_project]
+# read_ip /home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div.xci
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/david/Xilinx/Vivado/2014.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'div' generated file not found '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'div' generated file not found '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'div' generated file not found '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'div' generated file not found '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_funcsim.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'div' generated file not found '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_funcsim.vhdl'. Please regenerate to continue.
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property is_locked true [get_files /home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div.xci]
+# read_xdc dont_touch.xdc
+# set_property used_in_implementation false [get_files dont_touch.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir /home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.cache/wt [current_project]
+# set_property parent.project_dir /home/david/Desktop/siggen-v2-vivado [current_project]
+# catch { write_hwdef -file div.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top div -part xc7vx485tffg1157-1 -mode out_of_context
+Command: synth_design -top div -part xc7vx485tffg1157-1 -mode out_of_context
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 516.938 ; gain = 106.059
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'div' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/synth/div.vhd:71]
+INFO: [Synth 8-3491] module 'div_gen_v5_1' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/div_gen_v5_1.vhd:109' bound to instance 'U0' of component 'div_gen_v5_1' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/synth/div.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'div_gen_v5_1__parameterized0' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/div_gen_v5_1.vhd:167]
+INFO: [Synth 8-3491] module 'div_gen_v5_1_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/div_gen_v5_1_viv.vhd:181' bound to instance 'i_synth' of component 'div_gen_v5_1_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/div_gen_v5_1.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'div_gen_v5_1_viv__parameterized0' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/div_gen_v5_1_viv.vhd:252]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'i_nd_to_rdy' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/div_gen_v5_1_viv.vhd:580]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized0' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized0' (1#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'div_gen_synth' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/div_gen_synth.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'bip_sdivider_synth' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/bip_sdivider_synth.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'dividervdc_v' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:166]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_numer' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:559]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized2' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized2' (1#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_divisor_msbs' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:601]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized4' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized4' (1#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'addsubreg_v' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/addsubreg_v.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_viv.vhd:224]
+INFO: [Synth 8-3491] module 'c_addsub_lut6' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:136' bound to instance 'the_addsub' of component 'c_addsub_lut6' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_viv.vhd:429]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_lut6__parameterized0' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:188]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'q_c_outreg' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:607]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized6' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized6' (1#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'q_ovflreg' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:674]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'qreg' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:729]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized8' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized8' (1#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1033]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1041]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1053]
+INFO: [Synth 8-113] binding component instance 'carrymuxtop' to cell 'MUXCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1062]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1075]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1083]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1075]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1083]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1075]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1083]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1075]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1083]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1075]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1083]
+WARNING: [Synth 8-3848] Net c_out in module/entity c_addsub_lut6__parameterized0 does not have driver. [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:180]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_lut6__parameterized0' (2#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:188]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_viv' (3#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_viv.vhd:224]
+INFO: [Synth 8-256] done synthesizing module 'addsubreg_v' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/addsubreg_v.vhd:165]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_numer' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:559]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized10' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized10' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_divisor_msbs' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:601]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'quot_out' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:935]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized12' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized12' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_numer' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:559]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized14' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized14' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_divisor_msbs' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:601]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'quot_out' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:935]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized16' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized16' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_numer' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:559]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized18' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized18' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_divisor_msbs' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:601]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'quot_out' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:935]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized20' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized20' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_numer' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:559]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized22' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized22' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_divisor_msbs' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:601]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'quot_out' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:935]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized24' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized24' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_numer' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:559]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized26' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized26' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_divisor_msbs' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:601]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'quot_out' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:935]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized28' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized28' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_numer' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:559]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized30' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized30' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_divisor_msbs' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:601]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'quot_out' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:935]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized32' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized32' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_numer' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:559]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized34' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized34' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_divisor_msbs' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:601]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'quot_out' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:935]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_numer' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:559]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized37' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized37' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_divisor_msbs' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:601]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'quot_out' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:935]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized39' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized39' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_numer' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:559]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized41' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized41' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_divisor_msbs' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:601]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'quot_out' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:935]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized43' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized43' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_numer' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:559]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized45' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized45' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_divisor_msbs' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:601]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'quot_out' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:935]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized47' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized47' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_numer' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:559]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized49' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized49' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_divisor_msbs' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:601]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'quot_out' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:935]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized51' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized51' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_numer' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:559]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_divisor_msbs' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:601]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'quot_out' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:935]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized54' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized54' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:131]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'del_end_divisor' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:1018]
+INFO: [Synth 8-638] synthesizing module 'addsubreg_v__parameterized0' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/addsubreg_v.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_viv__parameterized0' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_viv.vhd:224]
+INFO: [Synth 8-3491] module 'c_addsub_lut6' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:136' bound to instance 'the_addsub' of component 'c_addsub_lut6' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_viv.vhd:429]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_lut6__parameterized2' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:188]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'q_c_outreg' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:607]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'q_ovflreg' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:674]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'qreg' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:729]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1033]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1041]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1053]
+INFO: [Synth 8-113] binding component instance 'carrymuxtop' to cell 'MUXCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1062]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1075]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1083]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1075]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1083]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1075]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1083]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1075]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1083]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1075]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:1083]
+WARNING: [Synth 8-3848] Net c_out in module/entity c_addsub_lut6__parameterized2 does not have driver. [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:180]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_lut6__parameterized2' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:188]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_viv__parameterized0' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_viv.vhd:224]
+INFO: [Synth 8-256] done synthesizing module 'addsubreg_v__parameterized0' (4#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/addsubreg_v.vhd:165]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at '/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv.vhd:106' bound to instance 'reg_quot' of component 'xbip_pipe_v3_0_viv' [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:1157]
+WARNING: [Synth 8-3848] Net rdy in module/entity dividervdc_v does not have driver. [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'dividervdc_v' (5#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:166]
+INFO: [Synth 8-256] done synthesizing module 'bip_sdivider_synth' (6#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/bip_sdivider_synth.vhd:159]
+INFO: [Synth 8-256] done synthesizing module 'div_gen_synth' (7#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/div_gen_synth.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'div_gen_v5_1_viv__parameterized0' (8#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/div_gen_v5_1_viv.vhd:252]
+INFO: [Synth 8-256] done synthesizing module 'div_gen_v5_1__parameterized0' (9#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/div_gen_v5_1.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'div' (10#1) [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/synth/div.vhd:71]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 568.816 ; gain = 157.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+INFO: [Netlist 29-17] Analyzing 98 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from /home/david/Xilinx/Vivado/2014.2/data/parts/xilinx/virtex7/virtex7/xc7vx485t/ClockRegion.xml
+Loading clock buffers from /home/david/Xilinx/Vivado/2014.2/data/parts/xilinx/virtex7/virtex7/xc7vx485t/ClockBuffers.xml
+Loading clock placement rules from /home/david/Xilinx/Vivado/2014.2/data/parts/xilinx/virtex7/ClockPlacerRules.xml
+Loading package pin functions from /home/david/Xilinx/Vivado/2014.2/data/parts/xilinx/virtex7/PinFunctions.xml...
+Loading package from /home/david/Xilinx/Vivado/2014.2/data/parts/xilinx/virtex7/virtex7/xc7vx485t/ffg1157/Package.xml
+Loading io standards from /home/david/Xilinx/Vivado/2014.2/data/./parts/xilinx/virtex7/IOStandards.xml
+Loading device configuration modes from /home/david/Xilinx/Vivado/2014.2/data/parts/xilinx/virtex7/ConfigModes.xml
+
+Processing XDC Constraints
+Parsing XDC File [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.runs/div_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.runs/div_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 809.832 ; gain = 398.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.runs/div_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 809.832 ; gain = 398.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 809.832 ; gain = 398.953
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3848] Net c_out in module/entity c_addsub_lut6__parameterized2 does not have driver. [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:180]
+WARNING: [Synth 8-3848] Net c_out in module/entity c_addsub_lut6__parameterized0 does not have driver. [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/c_addsub_lut6.vhd:180]
+WARNING: [Synth 8-3848] Net rdy in module/entity dividervdc_v does not have driver. [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_gen_v5_1/hdl/sdivider/dividervdc_v.vhd:158]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 809.832 ; gain = 398.953
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 809.832 ; gain = 398.953
+---------------------------------------------------------------------------------
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 809.832 ; gain = 398.953
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 809.832 ; gain = 398.953
+---------------------------------------------------------------------------------
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 809.832 ; gain = 398.953
+Finished Parallel Section  : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 809.832 ; gain = 398.953
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:48 . Memory (MB): peak = 821.844 ; gain = 410.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:48 . Memory (MB): peak = 821.844 ; gain = 410.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 828.855 ; gain = 417.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 828.859 ; gain = 417.980
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 828.859 ; gain = 417.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 828.859 ; gain = 417.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |LUT1   |    30|
+|2     |LUT2   |    34|
+|3     |LUT3   |    78|
+|4     |MUXCY  |    98|
+|5     |SRL16E |     1|
+|6     |XORCY  |    98|
+|7     |FDRE   |   394|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 828.859 ; gain = 417.980
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 828.859 ; gain = 417.980
+INFO: [Netlist 29-17] Analyzing 98 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Parsing XDC File [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_ooc.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 28 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 28 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+166 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:48 . Memory (MB): peak = 833.859 ; gain = 343.922
+# rename_ref -prefix_all div_
+INFO: [Coretcl 2-1174] Renamed 130 cell refs.
+# write_checkpoint -noxdef div.dcp
+# report_utilization -file div_utilization_synth.rpt -pb div_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.12 . Memory (MB): peak = 833.859 ; gain = 0.000
+# if { [catch {
+#   file copy -force /home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.runs/div_synth_1/div.dcp /home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div.dcp
+#   write_verilog -force -mode synth_stub /home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_stub.v
+#   write_vhdl -force -mode synth_stub /home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_stub.vhdl
+#   write_verilog -force -mode funcsim /home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_funcsim.v
+#   write_vhdl -force -mode funcsim /home/david/Desktop/siggen-v2-vivado/siggen-v2-vivado.srcs/sources_1/ip/div/div_funcsim.vhdl
+# } _RESULT ] } { 
+#   send_msg_id runtcl-3 error "Unable to successfully create or copy supporting IP files."
+#   return -code error
+# }
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  4 15:23:49 2016...

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/ipcore_dir/mul_13bits/mul_32bit.v" Line 7878: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"/home/david/Xilinx/ISE13.2/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1654" delta="unknown" >"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/src/CWEncode.v" Line 40: Instantiating &lt;<arg fmt="%s" index="1">fifo</arg>&gt; from unknown module &lt;<arg fmt="%s" index="2">fifo_8_to_1</arg>&gt;
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1654" delta="unknown" >"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/src/best_d.v" Line 98: Instantiating &lt;<arg fmt="%s" index="1">multiplier</arg>&gt; from unknown module &lt;<arg fmt="%s" index="2">mul_13bits</arg>&gt;
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1654" delta="unknown" >"/home/david/Dropbox/LDGC_Code/hardware/siggen-v1/src/syngen.v" Line 280: Instantiating &lt;<arg fmt="%s" index="1">b</arg>&gt; from unknown module &lt;<arg fmt="%s" index="2">b</arg>&gt;
+</msg>
+
+<msg type="error" file="Simulator" num="778" delta="unknown" >Static elaboration of top level Verilog design unit(s) in library <arg fmt="%s" index="1">work</arg> failed
+</msg>
+
+</messages>
+

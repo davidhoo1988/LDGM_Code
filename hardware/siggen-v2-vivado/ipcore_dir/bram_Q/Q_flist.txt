@@ -1,0 +1,26 @@
+# Output products list for <Q>
+Q.asy
+Q.gise
+Q.mif
+Q.ngc
+Q.sym
+Q.v
+Q.veo
+Q.xco
+Q.xise
+Q_flist.txt
+Q_ste/example_design/Q_top.ucf
+Q_ste/example_design/Q_top.vhd
+Q_ste/example_design/Q_top.xdc
+Q_ste/example_design/bmg_wrapper.vhd
+Q_ste/implement/implement.sh
+Q_ste/implement/planAhead_rdn.bat
+Q_ste/implement/planAhead_rdn.sh
+Q_ste/implement/planAhead_rdn.tcl
+Q_ste/implement/xst.prj
+Q_ste/implement/xst.scr
+Q_xmdf.tcl
+_xmsgs/pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_v6_2_readme.txt
+summary.log
